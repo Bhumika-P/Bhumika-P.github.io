@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Noto+Sans+KR" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type ="text/css" href ="style.css">
 
 </head>
@@ -37,13 +38,18 @@
 
     <div id = "content">
         
-        <div id="about" height="800px" class = "w3-container"><br>
+        <div id="about" class = "w3-rest"><br>
                 <h2 id="h_about">ABOUT ME</h2>
-                <div style="width: 50%; float:left">
-                    <img src="me3.jpg" id= "me"  class="img-responsive">
+                <div class="w3-third">
+                   
+                    <picture>
+                            <source srcset="me1.jpg" media="(max-width: 400px)">
+                            <source srcset="me3.jpg">
+                            <img src="me3.jpg" id="me" style="width:auto;">
+                    </picture>
                  </div>
                  
-                 <div style="width: 50%; float:right">
+                 <div class="w3-twothird">
                     <p id= "info">
                             I introduce the most creative and original ideas for my customers!
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.
@@ -53,19 +59,19 @@
                  </div>
         </div>
         
-        <div id="skills"><br>
+        <div id="skills" class= "w3-rest"><br>
                 <h2 id="h_skills">MY SKILLS</h2>
         </div>
         
-        <div id = "career"><br>
+        <div id = "career" class= "w3-rest"><br>
                 <h2 id="h_career">MY ENTIRE CAREER</h2>
         </div>
        
-        <div id="projects"><br>
+        <div id="projects" class= "w3-rest"><br>
                 <h2 id="h_projects">PROJECTS</h2>
         </div>
         
-        <div id = "contact"><br>
+        <div id = "contact" class= "w3-rest"><br>
                 <h2 id="h_contact">CONTACT</h2>
             <p><img src="location.png" height ="30" width = "30"><br>2861 Waterfront Avenue
                 <br>Algonquin IL 60102 USA
