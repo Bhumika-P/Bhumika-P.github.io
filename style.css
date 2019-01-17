@@ -40,7 +40,7 @@
     background-color: rgb(243, 240, 239);
   }
   h1{
-      font-size: 60px;
+      font-size: 3vw;
       text-align: center;
       color: white;
       
@@ -70,7 +70,7 @@
     border-radius: 12px;
   }
   #info{
-
+    font-size: 1vw;
     text-align: left;
     margin-right: 200px;
   }
