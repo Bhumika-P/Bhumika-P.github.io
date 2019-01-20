@@ -3,8 +3,7 @@
     font-family: 'Noto Sans KR', sans-serif;
   }
   .dropbtn {
-    background-color: white;
-    color: #333;
+    
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -36,10 +35,6 @@
     display: block;
   }
   
-  .dropdown:hover .dropbtn {
-    background-color: rgb(243, 240, 239);
-  }
-
   h1{
       font-size: 5vw;
       text-align: center;
