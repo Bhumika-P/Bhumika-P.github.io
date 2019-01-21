@@ -85,7 +85,7 @@
     margin-right: auto;
   }
   #info{
-    font-size: 1vw;
+    font-size: calc(10px + 0.5vw);
     text-align: center;
     margin-left: 5%;
     margin-right:5%;
@@ -101,7 +101,6 @@
     height: auto;
     background-color: #DE845F;
     text-align:center;
-    font-size: calc(16px + 1vw);
     color:white;
     border: 1px solid white;
   }
