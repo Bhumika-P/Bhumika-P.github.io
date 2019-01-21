@@ -101,7 +101,7 @@
     height: auto;
     background-color: #DE845F;
     text-align:center;
-    font-size: 20px;
+    font-size: calc(16px + 1vw);
     color:white;
     border: 1px solid white;
   }
