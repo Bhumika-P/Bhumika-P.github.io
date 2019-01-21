@@ -116,27 +116,54 @@
                 <h2 id="h_projects" class="w3-content">PROJECTS</h2>
                 <div class = "w3-row-padding">
                     <div class = "w3-quarter">
-                        <button class="collapsible">AMD Application</button>
-                        <div class = "content">
-
+                        September 2016 - April 2017
+                        <hr>AMD application
+                        <br><button class="collapsible">Read more</button>
+                        <div class = "content w3-left-align">
+                            <ul>
+                                <li>Implemented an Android application for AMD (Age-related macular degeneration) patients
+                                <li>Reduced app’s memory footprint by using firebase database to manipulate the data
+                                <li>Implemented reliable and maintainable code, while focusing on customer demands
+                                <li>Improved user experience by implementing both voice recognition and touch-based UI
+                            </ul>
                         </div>
                     </div>
                     <div class ="w3-quarter">
-                        <button class="collapsible">Hospital Messenger System</button>
-                        <div class = "content">
-                            
+                        September 2016 - December 2016
+                        <hr>Hospital Messenger System
+                        <br><button class="collapsible">Read more</button>
+                        <div class = "content w3-left-align">
+                            <ul>
+                                <li>Implemented a secure hospital messenger system in JAVA which allowed the clients to create groups and send text messages to the group
+                                <li>Improved verification and validation of the system by applying requirements elicitation
+                                <li>Optimized the system by 25% by finding bugs using acceptance tests and use case
+                                <li>Assured reliability and maintainability of the product, while meeting user requirements
+                            </ul>
                         </div>
                     </div>
                     <div class ="w3-quarter">
-                        <button class="collapsible">Smart Bottle</button>
-                        <div class = "content">
-                            
+                        September 2015 - December 2015
+                        <hr>Smart Bottle
+                        <br><button class="collapsible">Read more</button>
+                        <div class = "content w3-left-align">
+                            <ul>
+                                <li>Worked as a part of a team implementing hardware and software of a water bottle that measures andmonitors hydration of user and interacts with a smart-phone.
+                                <li>Established an android based application for data interaction and data manipulation between the waterbottle and smart-phone.
+                                <li>Contributed programming skills by creating an android application using the android studio.
+                                <li>Achieved project goal within a limited time frame and prepared a professional final report.
+                            </ul>
                         </div>
                     </div>
                     <div class ="w3-quarter">
-                        <button class="collapsible">VEX Robot</button>
+                        September 2013 - April 2014
+                        <hr>VEX Robot
+                        <br><button class="collapsible">Read more</button>
                         <div class = "content">
-                            
+                            <ul>
+                                <li>Demonstrated excellent communication and teamwork skills while working in a team to implement aVEX robot.
+                                <li>Assisted in developing the hardware and software for the VEX robot.
+                                <li>Demonstrated excellent technical writing skills in the final project report.
+                                </ul>
                         </div>
                     </div>
                 </div>
@@ -152,6 +179,21 @@
         </div>
     </div>
     <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        } 
+        });
+}
+
         window.onscroll = function() {myFunction()};
         
         var navbar = document.getElementById("navbar1");

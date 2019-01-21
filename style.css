@@ -60,7 +60,28 @@
   #mail{
     margin-top:1%;
   }
+  .collapsible {
+    border-radius: 16px;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 30%;
+    text-align: center;
+    outline: none;
+    font-size: calc(1px+0.5vw);
+  }
   
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    font-size: calc(10px + 0.5vw);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 
     #header{
       background-image: url("header4.jpg");
