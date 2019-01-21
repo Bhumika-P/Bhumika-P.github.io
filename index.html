@@ -25,6 +25,7 @@
                 <a onclick="to_career()" style="cursor:pointer">CAREER</a>
                 <a onclick="to_projects()" style="cursor:pointer">PROJECTS</a>
                 <a onclick="to_contact()" style="cursor:pointer">CONTACT</a>
+                <a onclick="to_resume()" style="cursor:pointer">DOWNLOAD RESUME</a>
             </div>
         </div>
         
@@ -47,7 +48,7 @@
                     <picture>
                             <source srcset="me1.jpg" media="(max-width: 400px)">
                             <source srcset="me3.jpg">
-                            <img src="me3.jpg" id="me" style="width:auto;">
+                            <img src="me3.jpg" id="me" style="width:auto;" >
                     </picture>
                  </div>
                  
@@ -80,7 +81,7 @@
                         <br>Honours Bachelor of Science in Computer Engineering (B.Eng.) , Major GPA: 3.2
                     </div>
                 </div>
-                
+                <br>
                 <div class = "w3-row-padding">
                     <h3 class="w3-content" style="text-shadow:1px 1px 0 #444">Work Experience</h3>
                     <div class="w3-quarter w3-border-right">
@@ -110,6 +111,7 @@
                             <br>Applied excellent management and administration skills while assisting the portal manager to manage students and put up exams on the student portal.
                     </div>
                 </div>
+                <br>
         </div>
        
         <div id="projects" class= "w3-rest"><br>
@@ -179,7 +181,7 @@
                 <br><img id = "phone" src="phone.png" height ="30" width = "30"><br>224-595-5222
                 <br><img id = "mail" src ="mail.png" height ="30" width = "30"><br>pbhumika.job@gmail.com
             </p>
-            <a href="Bhumika_1p_Resume.pdf">Download My Resume</a>
+            <a id="resume" href="Bhumika_1p_Resume.pdf">DOWNLOAD MY RESUME</a>
         </div>
     </div>
     <script>
@@ -217,6 +219,7 @@
         var v4 = document.getElementById("h_projects");
         var v5 = document.getElementById("h_contact");
         var v6 = document.getElementById("name");
+        var v7 = document.getElementById("resume");
         function to_about(){
             v1.scrollIntoView(true);
         }
@@ -234,6 +237,9 @@
         }
         function to_home(){
             v6.scrollIntoView(true);
+        }
+        function to_resume(){
+            v7.scrollIntoView(true);
         }
     </script>
 </body>

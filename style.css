@@ -5,7 +5,7 @@
   .dropbtn {
     
     padding: 16px;
-    font-size: 16px;
+    font-size: calc(12px+0.5vw);
     border: none;
     cursor: pointer;
     border-radius: 12px;
@@ -40,6 +40,7 @@
       text-align: center;
       color: white;
       
+      
   }
   h2,h3{
       text-align: center;
@@ -50,9 +51,10 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
+   margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 70%;
   }
   #phone{
     margin-top: 1%;
@@ -68,6 +70,7 @@
     padding: 8px;
     width: 30%;
     margin-top: 2%;
+    margin-bottom: 5%;
     text-align: center;
     outline: none;
     font-size: calc(1px+0.5vw);
@@ -83,21 +86,30 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+    .rightside{
+      margin-left: 1px;
 
-  #header{
-    background-image: url("me1.jpg");
-    max-width: 100%;
-    height:900px;
-    border: 1px solid #333;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;     
-    background-size: cover; 
-  }
-  /* For width 400px and larger: */
-  @media only screen and (min-width: 400px) {
+    }
+    #resume{
+      padding: 0 5%;
+      margin: 5% 2% 2% 2%;
+      font-size: calc(14px+1vw);
+    }
+
+    @media only screen and(min-width: 600px){
+      #header{
+        background-image: url("header4.jpg");
+        max-width: 100%;
+        height:900px;
+        border: 1px solid #333;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;     
+        background-size: cover; 
+      }
+    }
     #header{
-      background-image: url("header4.jpg");
+      background-image: url("header5.jpg");
       max-width: 100%;
       height:900px;
       border: 1px solid #333;
@@ -106,8 +118,6 @@
       background-position: center;     
       background-size: cover; 
     }
-  }
-   
 
   #me{
     border: 5px solid white;
