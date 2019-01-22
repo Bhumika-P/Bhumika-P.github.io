@@ -38,7 +38,6 @@
     display: block;
   }
   
-
   h1,h2,h3{
       text-align: center;
       color:white;
@@ -60,6 +59,22 @@
   #mail{
     margin-top:1%;
   }
+  .container1 {
+    width: 100%; 
+  }
+  
+  .skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+  }
+  .html {width:90%; background-color: #808080;}
+  .css {width:80%; background-color: #808080;}
+  .js {width:60%; background-color: #808080;}
+  .as {width:40%; background-color: #808080;}
+  .sql {width:40%; background-color: #808080;}
+  .java{width:78%; background-color: #808080;}
+
   .collapsible {
     border-radius: 16px;
     background-color: #777;
@@ -169,11 +184,7 @@
     border: 1px solid white;
   }
   #skills{
-    align-content: center;
-    max-width : 100%;
-    height: auto;
     background-color: #333;
-    text-align:center;
     font-size: calc(10px + 0.5vw);
     color:white;
     border: 1px solid white;

@@ -64,6 +64,38 @@
         
         <div id="skills" class= "w3-rest"><br>
                 <h2 id="h_skills">MY SKILLS</h2>
+                <div class ="w3-half w3-container w3-left-align w3-margin-bottom">
+                    <p>HTML</p>
+                    <div class="container1">
+                        <div class="skills html">90%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="container1">
+                        <div class="skills css">80%</div>
+                    </div>
+                    <p>JavaScript</p>
+                    <div class="container1">
+                        <div class="skills js">70%</div>
+                    </div>
+                    <br>
+                </div>
+                
+                <div class ="w3-half w3-container w3-left-align w3-margin-bottom">
+                    <p>JAVA</p>
+                    <div class="container1">
+                        <div class="skills java">78%</div>
+                    </div>
+                    <p>SQL DB2</p>
+                    <div class="container1">
+                        <div class="skills sql">40%</div>
+                    </div>
+                    <p>ANDROID STUDIO</p>
+                    <div class="container1">
+                        <div class="skills as">40%</div>
+                    </div>
+                    <br>
+                </div>
+                
         </div>
         
         <div id = "career" class= "w3-rest"><br>
@@ -241,6 +273,16 @@
         function to_resume(){
             v7.scrollIntoView(true);
         }
+
+        $(document).click(function(){
+        $("#dropdown-content").hide();
+        });
+
+/* Clicks within the dropdown won't make
+   it past the dropdown itself */
+        $("#dropdown-content").click(function(e){
+    e.stopPropagation();
+        });
     </script>
 </body>
 </html>
