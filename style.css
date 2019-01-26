@@ -107,8 +107,11 @@
   }
     #resume{
       padding: 0 5%;
-      margin: 5% 2% 2% 2%;
+
       font-size: calc(14px+1vw);
+      border: 1px solid white;
+      margin-bottom:5%;
+      padding-bottom: 5%;
     }
     #header{
       background-image: url("header6.jpg");
