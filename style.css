@@ -1,6 +1,7 @@
   body {
-    margin: 0;
+
     font-family: 'Noto Sans KR', sans-serif;
+    border: 10px solid white;
   }
   .dropbtn {
     
@@ -38,8 +39,8 @@
     display: block;
   }
   .logos{
-    width: calc(8px+0.5vw);
-    height:calc(8px+0.5vw);
+    width: calc(5px+0.5vw);
+    height:calc(5px+0.5vw);
   }
   h1,h2,h3{
       text-align: center;
@@ -200,10 +201,12 @@
     background-color: #DE845F;
     text-align:center;
     font-size: calc(10px + 0.5vw);
-    color:#333;
+    color:white;
     border: 1px solid white;
   }
- 
+  .rightside{
+    font-size: calc(8px + 0.5vw);
+  }
   .sticky {
     position: fixed;
     top: 0;
