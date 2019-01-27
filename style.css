@@ -68,6 +68,13 @@ html,body
     #motto{
       font-size: 14px;
     }
+    h1{
+      text-align: center;
+      color:#1ABC9C;
+      text-shadow:2px 2px black;
+      font-weight: bold;
+      font-size:1.5em;
+    }
   }
   .c_line{
     display: block;
