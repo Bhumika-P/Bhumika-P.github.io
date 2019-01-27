@@ -104,6 +104,8 @@
   .tital{
     font-weight: 580;
     font-size: calc(20px+1vw);
+    
+    color: #333;
   }
     #resume{
       padding: 0 5%;
@@ -207,6 +209,7 @@
   }
   .rightside{
     font-size: calc(8px + 0.5vw);
+    
   }
   .sticky {
     position: fixed;
