@@ -61,9 +61,7 @@ html,body
       color: black;
       font-weight: bold;
   }
-  #motto{
-    font-size: calc(8px+1vw);
-  }
+  
   @media only screen and (max-width:375px){
     #motto{
       font-size: 14px;
@@ -257,7 +255,7 @@ html,body
     text-align:center;
     font-size: calc(10px + 0.5vw);
     color:#333;
-    border: 1px solid white;
+
   }
   .c_form{
     align-content: center
