@@ -181,22 +181,25 @@ html,body
       }
     }
 
-  #me{
-    border: 5px solid white;
-    margin-left: 20%;
-    border-radius: 12px;
-    height:auto;
-    max-width: auto;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
+    #me{
+      border: 5px solid white;
+      margin-left: 20%;
+      border-radius: 12px;
+      height:auto;
+      max-width: 100%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
   #info{
     margin-left: 5%;
     margin-right:5%;
     margin-bottom: 5%;
     margin-top: 5%;
+    z-index: 1;
   }
   #social{
       text-align: center;
