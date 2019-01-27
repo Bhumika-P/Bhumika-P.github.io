@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+    
     <link rel="stylesheet" type ="text/css" href ="style.css">
 
 </head>
@@ -304,14 +306,51 @@
         
         <div id = "contact" class= "w3-rest"><br>
                 <h2 id="h_contact">CONTACT</h2>
-            <p><img src="location.png" height ="30" width = "30"><br>2861 Waterfront Avenue
-                <br>Algonquin IL 60102 USA
-                <br><img id = "phone" src="phone.png" height ="30" width = "30"><br>224-595-5222
-                <br><img id = "mail" src ="mail.png" height ="30" width = "30"><br>pbhumika.job@gmail.com
-            </p>
-            <a id="resume" href="Bhumika_1p_Resume.pdf">DOWNLOAD MY RESUME</a>
+                <div class="w3-half">
+                        <p><img src="location.png" height ="30" width = "30"><br>2861 Waterfront Avenue
+                            <br>Algonquin IL 60102 USA
+                            <br><img id = "phone" src="phone.png" height ="30" width = "30"><br>224-595-5222
+                            <br><img id = "mail" src ="mail.png" height ="30" width = "30"><br>pbhumika.job@gmail.com
+                        </p>
+                        <a id="resume" href="Bhumika_1p_Resume.pdf">DOWNLOAD MY RESUME</a>
+                </div>
+                <div class="w3-half c_form">
+                    <form  action="mailto:pbhumika.job@gmail.com" method="POST" enctype="multipart/form-data"name="Portfolio">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="name">Name</label>
+                              <input type="text" class="form-control" id="name" placeholder="John Smith" required>
+                            </div>
+                          </div>
+                          
+                          <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="email">Email</label>
+                                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group col-md-6">
+                                        <label for="textarea" >Comment</label>
+                                        <textarea name="VisitorComment" rows="5" cols="50">
+                                            </textarea>
+                                </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group col-md-6">
+                                        <input type="submit">
+                                        
+                                </div>
+                        </div>
+                
+                    </form>
+                </div>
+            
+                
         </div>
-    </div>
+       
+        
+
     <script>
         function myButtonFunction() {
   document.getElementById("drop").classList.toggle("show");

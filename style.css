@@ -149,12 +149,13 @@ html,body
     color: #1ABC9C;
   }
     #resume{
+      text-shadow:0.5px 1px black;
       padding: 0 5%;
-
+      color: #333;
+      font-weight: bold;
       font-size: calc(14px+1vw);
-      border: 1px solid white;
       margin-bottom:5%;
-      padding-bottom: 5%;
+  
     }
     #header{
       background-image: url("header8.jpg");
@@ -249,7 +250,7 @@ html,body
     padding-left: 10%;
   }
   #contact{
-    align-content: center;
+    align-content: right;
     max-width : 100%;
     height: auto;
     background-color:#e6e6e6;
@@ -257,6 +258,9 @@ html,body
     font-size: calc(10px + 0.5vw);
     color:#333;
     border: 1px solid white;
+  }
+  .c_form{
+    align-content: center
   }
   .rightside{
     font-size: calc(8px + 0.5vw);
