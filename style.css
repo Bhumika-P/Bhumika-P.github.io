@@ -64,9 +64,9 @@ html,body
   #motto{
     font-size: calc(8px+1vw);
   }
-  @media only screen and (max-width:375px){
+  @media only screen and (max-width:415px){
     #motto{
-      font-size: 14px;
+      font-size: 16px;
     }
     h1{
       text-align: center;
