@@ -126,7 +126,7 @@
       padding-bottom: 5%;
     }
     #header{
-      background-image: url("header6.jpg");
+      background-image: url("header8.jpg");
       max-width: 100%;
       height:600px;
       border: 1px solid #333;
@@ -189,10 +189,13 @@
     max-width : 100%;
     height: auto;
     background-color: #e6e6e6;
-    text-align:center;
+    text-align:left;
     font-size: calc(10px + 0.5vw);
     color:#333;
     border: 1px solid white;
+    padding-right: 5%;
+    padding-left: 5%;
+    
   }
   #projects{
     align-content: center;
@@ -222,7 +225,7 @@
   }
   .rightside{
     font-size: calc(8px + 0.5vw);
-    
+    text-align: left;
   }
   .sticky {
     position: fixed;
