@@ -16,9 +16,9 @@
 <body>
     <div id ="header">
         <div class="dropdown" id="navbar1">
-            <img src = "menu-button.png" class="dropbtn" style="background-color:#1ABC9C">
+            <img src = "menu-button.png" onclick="myButtonFunction()"class="dropbtn" style="background-color:#1ABC9C">
            
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="drop">
                 <a onclick="to_home()" style="cursor:pointer">HOME</a>
                 <a onclick="to_about()" style="cursor:pointer">ABOUT ME</a>
                 <a onclick="to_skills() " style="cursor:pointer">SKILLS</a>
@@ -302,6 +302,23 @@
         </div>
     </div>
     <script>
+        function myButtonFunction() {
+  document.getElementById("drop").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
         var coll = document.getElementsByClassName("collapsible");
         var i;
 
