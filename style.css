@@ -61,8 +61,10 @@ html,body
       color: black;
       font-weight: bold;
   }
+
   #motto{
     font-size: calc(8px+1vw);
+    
   }
   @media only screen and (max-width:415px){
     #motto{
@@ -111,12 +113,13 @@ html,body
     padding: 10px;
     color: white;
   }
-  .html {width:90%; background-color: #808080;}
+  .html { width:90%;background-color: #808080;}
   .css {width:80%; background-color: #808080;}
   .js {width:60%; background-color: #808080;}
   .as {width:40%; background-color: #808080;}
   .sql {width:40%; background-color: #808080;}
   .java{width:78%; background-color: #808080;}
+
 
   .collapsible {
     border-radius: 16px;
@@ -192,7 +195,7 @@ html,body
       margin-top: 5%;
       margin-left: auto;
       margin-right: auto;
-      
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   #info{
     margin-left: 5%;
@@ -201,9 +204,19 @@ html,body
     margin-top: 5%;
     z-index: 1;
   }
+  
   #social{
       text-align: center;
+      -webkit-transition: width 2s; /* Safari */
+      transition: width 2s;
   }
+ .logos{
+  transition-timing-function:ease;
+  -webkit-transition-timing-function: ease;
+ }
+#social :hover{
+   width:60px;
+ }
   #h_about{
     color:#1ABC9C;
   }
@@ -219,6 +232,7 @@ html,body
     padding-left: 5%;
     font-size: calc(10px + 0.5vw);
   }
+  
   #career{
     align-content: center;
     max-width : 100%;
@@ -279,3 +293,246 @@ html,body
     padding-top: 60px;
   }
 
+
+
+
+  .skills-bar-container {
+    position: relative;
+    width: 80%;
+    min-width: 300px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    list-style: none;
+  }
+  .skills-bar-container li {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .skills-bar-container li .progressbar-title {
+    color: #fff;
+  }
+  .skills-bar-container li .progressbar-title h3 {
+    display: inline-block;
+    color:white;
+  }
+  .skills-bar-container li .progressbar-title .percent {
+    position: absolute;
+    right: 5px;
+  }
+  .skills-bar-container li .bar-container {
+    background: #555;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .skills-bar-container li .bar-container .progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .skills-bar-container li .bar-container #progress-html {
+    -webkit-animation-name: progress-html;
+    animation-name: progress-html;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
+  .skills-bar-container li .bar-container #progress-css {
+    -webkit-animation-name: progress-css;
+    animation-name: progress-css;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+  }
+  .skills-bar-container li .bar-container #progress-javascript {
+    -webkit-animation-name: progress-javascript;
+    animation-name: progress-javascript;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+  }
+  .skills-bar-container li .bar-container #progress-java {
+    -webkit-animation-name: progress-java;
+    animation-name: progress-java;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+  }
+  .skills-bar-container li .bar-container #progress-sql {
+    -webkit-animation-name: progress-sql;
+    animation-name: progress-sql;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+  }
+  .skills-bar-container li .bar-container #progress-as {
+    -webkit-animation-name: progress-as;
+    animation-name: progress-as;
+    -webkit-animation-delay:4.2s;
+    animation-delay: 4.2s;
+  }
+  .progress_b{
+    background-color: #1ABC9C;;
+  }
+  
+  
+  
+  @-webkit-keyframes progress-html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  @-webkit-keyframes progress-css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  @-webkit-keyframes progress-javascript {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @-webkit-keyframes progress-java {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 78%;
+    }
+  }
+  @-webkit-keyframes progress-sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  @-webkit-keyframes progress-as {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  @-moz-keyframes progress-html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  @-moz-keyframes progress-css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  @-moz-keyframes progress-javascript {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @-moz-keyframes progress-java {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 78%;
+    }
+  }
+  @-moz-keyframes progress-sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  @-moz-keyframes progress-as{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  @keyframes progress-html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  @keyframes progress-css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  @keyframes progress-javascript {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @keyframes progress-java {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 78%;
+    }
+  }
+  @keyframes progress-sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  @keyframes progress-as{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 40%;
+    }
+  }

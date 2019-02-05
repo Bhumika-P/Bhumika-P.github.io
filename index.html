@@ -10,17 +10,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
-    
     <link rel="stylesheet" type ="text/css" href ="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <div id ="header">
         <div class="dropdown" id="navbar1">
-            
-            
-            <picture>
+           <picture>
                     <source srcset="menu-button-s.png" media="(max-width: 479px)">
                     <source srcset="menu-button.png">
                     <img src="menu-button.png" onclick="myButtonFunction()"class="dropbtn" style="background-color:#1ABC9C" style="width:auto;" >
@@ -35,10 +32,11 @@
                 <a onclick="to_resume()" style="cursor:pointer">RESUME</a>
             </div>
         </div>
+ 
+            <h1 style="font-size:400%;" class="w3-container bounceIn" id="name"  data-aos="fade-right" data-aos-duration="1500">BHUMIKA BERGMAN</h1>
+    
         
-        
-        <h1 style="font-size:400%;" class="w3-container" id="name">BHUMIKA BERGMAN</h1>
-        <h3 style="color:white" class="w3-container" id="motto">CODER•DESIGNER•PROFESSIONAL</h3>
+        <h3 style="color:white" class="w3-container" id="motto"  data-aos="fade-left"  data-aos-duration="1500">CODER•DESIGNER•PROFESSIONAL</h3>
         <div id= "social">
                 <a href="https://www.facebook.com/bhumika.patel.737"><img class="logos" src="facebook2.png" height="50" width="50"></a>
                 <a href="https://www.linkedin.com/in/p-bhumika/"><img class="logos" src="linkedin2.png"  height="50" width="50"></a>
@@ -50,8 +48,8 @@
     <div id = "content">
         
         <div id="about" class = "w3-rest" class = "w3-row"><br>
-                <h2 id="h_about">ABOUT ME</h2>
-                <div class="w3-third  w3-cell" >
+                <h2 id="h_about"  data-aos="zoom-in" data-aos-duration="1500">ABOUT ME</h2>
+                <div class="w3-third  w3-cell" data-aos="flip-right" data-aos-duration="2000">
                    
                     <picture id="pic">
                             <source srcset="me5.jpg" media="(max-width: 479px)">
@@ -60,7 +58,7 @@
                     </picture>
                  </div>
                  
-                 <div class="w3-twothird w3-cell">
+                 <div id="animation_about" class="w3-twothird w3-cell" data-aos="zoom-in-right" data-aos-duration="2000">
                     <p id= "info">
                             <p>
                             I am Bhumika Bergman, a fellow computer engineer. I graduated in February 2018. This portfolio will give you insight into my career, projects and contact information.
@@ -95,65 +93,108 @@
                  </div>
         </div>
         
-        <div id="skills" class= "w3-rest"><br>
-                <h2 id="h_skills">MY SKILLS</h2>
-                <div class ="w3-half w3-container w3-left-align w3-margin-bottom">
-                    <p>HTML</p>
-                    <div class="container1">
-                        <div class="skills html">90%</div>
-                    </div><br>
-                    <p>CSS</p>
-                    <div class="container1">
-                        <div class="skills css">80%</div>
-                    </div><br>
-                    <p>JavaScript</p>
-                    <div class="container1">
-                        <div class="skills js">70%</div>
-                    </div><br>
-                </div>
-                
-                <div class ="w3-half w3-container w3-left-align w3-margin-bottom">
-                    <p>JAVA</p>
-                    <div class="container1">
-                        <div class="skills java">78%</div>
-                    </div><br>
-                    <p>SQL DB2</p>
-                    <div class="container1">
-                        <div class="skills sql">40%</div>
-                    </div><br>
-                    <p>ANDROID STUDIO</p>
-                    <div class="container1">
-                        <div class="skills as">40%</div>
-                    </div><br>
-                </div>
-                
-        </div>
+  
         
+        <div id="skills"class="w3-rest">
+                <h2 id="h_skills"  data-aos="zoom-in" data-aos-duration="1500">MY SKILLS</h2>
+                <ul class="skills-bar-container">
+                <div class ="w3-half w3-container w3-left-align w3-margin-bottom" >
+                        <li>
+                                <div class="progressbar-title">
+                                  <h3 class="s_tital">HTML</h3>
+                                  <span class="percent" id="html-pourcent"></span>
+                                </div>
+                                <div class="bar-container">
+                                  <span class="progressbar progress_b" id="progress-html"></span>
+                                </div>
+                              </li>
+                              
+                                                     
+                              <li>
+                                <div class="progressbar-title">
+                                  <h3 class="s_tital">CSS</h3>
+                                  <span class="percent" id="css-pourcent"></span>
+                                </div>
+                                <div class="bar-container">
+                                  <span class="progressbar progress_b" id="progress-css"></span>
+                                </div>
+                              </li>
+                              
+                              <li>
+                                <div class="progressbar-title">
+                                  <h3 class="s_tital">JavaScript</h3>
+                                  <span class="percent" id="javascript-pourcent"></span>
+                                </div>
+                                <div class="bar-container">
+                                  <span class="progressbar progress_b" id="progress-javascript"></span>
+                                </div>
+                              </li>
+                </div>
+
+                
+                  
+                <div class ="w3-half w3-container w3-left-align w3-margin-bottom" >
+                    <li>
+                        <div class="progressbar-title">
+                          <h3 class="s_tital">JAVA</h3>
+                          <span class="percent" id="java-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progress_b" id="progress-java"></span>
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="progressbar-title">
+                          <h3 class="s_tital">SQL DB2</h3>
+                          <span class="percent" id="sql-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progress_b" id="progress-sql"></span>
+                        </div>
+                      </li>
+
+                      <li>
+                            <div class="progressbar-title">
+                              <h3 class="s_tital">ANDROID STUDIO</h3>
+                              <span class="percent" id="as-pourcent"></span>
+                            </div>
+                            <div class="bar-container">
+                              <span class="progressbar progress_b" id="progress-as"></span>
+                            </div>
+                        </li>
+                </div>
+                
+               
+                
+              </ul>
+        </div>
+
         <div id = "career" class= "w3-rest"><br>
-                <h2 id="h_career">MY ENTIRE CAREER</h2>
+                <h2 id="h_career"  data-aos="zoom-in" data-aos-duration="1500">MY ENTIRE CAREER</h2>
                 <div class = "w3-row-padding">
                     <h3 class="w3-content " style="text-shadow:1px 1px 0 #444">Education</h3>
-                    <div class="w3-quarter w3-border-right  tital">
+                    <div class="w3-quarter w3-border-right tital" data-aos="zoom-in-left" data-aos-duration="1500">
                         <h4>September 2013 - February 2018</h4>
                         <hr class="c_line">
                         York University
                         <br>Toronto,Canada
                         
                     </div>
-                    <div class="w3-threequarter w3-left-align rightside">
+                    <div class="w3-threequarter w3-left-align rightside" data-aos="zoom-in-right" data-aos-duration="1500">
                         <br>Honours Bachelor of Science in Computer Engineering (B.Eng.) , Major GPA: 3.2
                     </div>
                 </div>
                 <br>
                 <div class = "w3-row-padding">
                     <h3 class="w3-content" style="text-shadow:1px 1px 0 #444">Work Experience</h3>
-                    <br><div class="w3-quarter w3-border-right tital">
+                    <br><div class="w3-quarter w3-border-right tital" data-aos="zoom-in-left" data-aos-duration="1500">
                         <h4>January 2018 - November 2018</h4>
                         <hr class="c_line">
                         Freelance Application Developer
                         <br>Primitius International
                     </div>
-                    <div class="w3-threequarter w3-left-align rightside ">
+                    <div class="w3-threequarter w3-left-align  rightside " data-aos="zoom-in-right" data-aos-duration="1500">
                         <p>
                             I had the opportunity to work at Primitius International as a freelance application developer. It was a great learning experience.
                             My project included creating a survey analyzer for electronically interpreting and evaluating an 18-page natural health survey questionnaire.
@@ -166,13 +207,13 @@
                 </div>
                 <br>
                 <div class = "w3-row-padding">
-                    <div class = "w3-quarter w3-border-right  tital">
+                    <div class = "w3-quarter w3-border-right  tital" data-aos="zoom-in-left" data-aos-duration="1500">
                         <h4>March 2016 - April 2017</h4>
                         <hr class="c_line">
                         Portal Management Administration Assistant
                         <br>New Eden School Of Natural Health and Herbal Studies
                     </div>
-                    <div class="w3-threequarter w3-left-align rightside">
+                    <div class="w3-threequarter w3-left-align  rightside" data-aos="zoom-in-right" data-aos-duration="1500">
                         <p>
                             I had a great opportunity to participate in the creation of the student portal for New Eden School Of Natural Health and Herbal Study.
                             The student portal was created using WordPress and I was in charge of the making the UI user-appealing and user-friendly. 
@@ -190,9 +231,9 @@
         </div>
        
         <div id="projects" class= "w3-rest"><br>
-                <h2 id="h_projects" class="w3-content">PROJECTS</h2>
+                <h2 id="h_projects" class="w3-content"  data-aos="zoom-in" data-aos-duration="1000">PROJECTS</h2>
                 <div class = "w3-row-padding">
-                    <div class = "w3-quarter ">
+                    <div class = "w3-quarter w3-animate-bottom " data-aos="fade-down-left" data-aos-duration="1000">
                         <h4>September 2016 - April 2017</h4>
                         <hr >AMD application
                         <br><button class="collapsible">Read more</button>
@@ -219,7 +260,7 @@
 
                         </div>
                     </div>
-                    <div class ="w3-quarter">
+                    <div class ="w3-quarter" data-aos="fade-down" data-aos-duration="1000">
                         <h4>September 2016 - December 2016</h4>
                         <hr>Hospital Messenger System
                         <br><button class="collapsible">Read more</button>
@@ -260,7 +301,7 @@
                             
                         </div>
                     </div>
-                    <div class ="w3-quarter">
+                    <div class ="w3-quarter" data-aos="fade-down" data-aos-duration="1000">
                             <h4>September 2015 - December 2015</h4>
                         <hr>Smart Bottle
                         <br><button class="collapsible">Read more</button>
@@ -282,7 +323,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class ="w3-quarter">
+                    <div class ="w3-quarter" data-aos="fade-down-right" data-aos-duration="1000">
                             <h4>September 2013 - April 2014</h4>
                         <hr>VEX Robot
                         <br><button class="collapsible">Read more</button>
@@ -304,8 +345,8 @@
                 </div>
         </div>
         
-        <div id = "contact" class= "w3-rest"><br>
-                <h2 id="h_contact">CONTACT</h2>
+        <div id = "contact" class= "w3-rest w3-animate-bottom"><br>
+                <h2 id="h_contact"  data-aos="zoom-in" data-aos-duration="1500">CONTACT</h2>
                
                         <p><img src="location.png" height ="30" width = "30"><br>2861 Waterfront Avenue
                             <br>Algonquin IL 60102 USA
@@ -318,95 +359,13 @@
                 
         </div>
        
-        
-
+       
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
     <script>
-        function sendmail(){
-            window.open('mailto:test@example.com?subject=subject&body=body');
-        }
-        function myButtonFunction() {
-  document.getElementById("drop").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-        content.style.maxHeight = null;
-        } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-        } 
-        });
-}
-
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar1");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-
-        var v1 = document.getElementById("h_about");
-        var v2 = document.getElementById("h_skills");
-        var v3 = document.getElementById("h_career");
-        var v4 = document.getElementById("h_projects");
-        var v5 = document.getElementById("h_contact");
-        var v6 = document.getElementById("name");
-        var v7 = document.getElementById("resume");
-        function to_about(){
-            v1.scrollIntoView(true);
-        }
-        function to_skills(){
-            v2.scrollIntoView(true);
-        }
-        function to_career(){
-            v3.scrollIntoView(true);
-        }   
-        function to_projects(){
-            v4.scrollIntoView(true);
-        }
-        function to_contact(){
-            v5.scrollIntoView(true);
-        }
-        function to_home(){
-            v6.scrollIntoView(true);
-        }
-        function to_resume(){
-            v7.scrollIntoView(true);
-        }
-
-        $(document).click(function(){
-        $("#dropdown-content").hide();
-        });
-
-/* Clicks within the dropdown won't make
-   it past the dropdown itself */
-        $("#dropdown-content").click(function(e){
-    e.stopPropagation();
-        });
-    </script>
+        AOS.init();
+      </script> 
+    <script src="portfolio.js"></script>
+    
+      
 </body>
 </html>
