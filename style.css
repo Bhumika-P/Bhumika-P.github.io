@@ -6,7 +6,6 @@ html,body
     overflow-x: hidden; 
 }
   body {
-
     font-family: 'Noto Sans KR', sans-serif;
     border: 2px solid white;
   }
@@ -18,7 +17,7 @@ html,body
     cursor: pointer;
     border-radius: 12px;
   }
- h4{
+  h4{
     font-family: 'IM Fell Double Pica', serif;
     font-size: calc(16px+2vw);
   }
@@ -57,7 +56,7 @@ html,body
       text-shadow: 1px 1px black
   }
   h3{
-    text-align: center;
+      text-align: center;
       color: black;
       font-weight: bold;
   }
@@ -140,7 +139,7 @@ html,body
   }
   
   .content {
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(10px + 0.5vw);;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -293,9 +292,6 @@ html,body
     padding-top: 60px;
   }
 
-
-
-
   .skills-bar-container {
     position: relative;
     width: 80%;
@@ -343,8 +339,8 @@ html,body
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     -webkit-animation-fill-mode: both;
@@ -390,7 +386,7 @@ html,body
     background-color: #1ABC9C;;
   }
   
-  
+
   
   @-webkit-keyframes progress-html {
     0% {
