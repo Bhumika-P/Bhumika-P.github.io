@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type ="text/css" href ="style.css">
+    <link rel="stylesheet" type ="text/css" href ="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
@@ -18,9 +18,9 @@
     <div id ="header">
         <div class="dropdown" id="navbar1">
            <picture>
-                    <source srcset="menu-button-s.png" media="(max-width: 479px)">
-                    <source srcset="menu-button.png">
-                    <img src="menu-button.png" onclick="myButtonFunction()"class="dropbtn" style="background-color:#1ABC9C" style="width:auto;" >
+                    <source srcset="assets/icons/menu-button-s.png" media="(max-width: 479px)">
+                    <source srcset="assets/icons/menu-button.png">
+                    <img src="assets/icons/menu-button.png" onclick="myButtonFunction()"class="dropbtn" style="background-color:#1ABC9C" style="width:auto;" >
             </picture>
             <div class="dropdown-content" id="drop">
                 <a onclick="to_home()" style="cursor:pointer">HOME</a>
@@ -38,10 +38,10 @@
         
         <h3 style="color:white" class="w3-container" id="motto"  data-aos="fade-left"  data-aos-duration="1500">CODER•DESIGNER•PROFESSIONAL</h3>
         <div id= "social">
-                <a href="https://www.facebook.com/bhumika.patel.737"><img class="logos" src="facebook2.png" height="50" width="50"></a>
-                <a href="https://www.linkedin.com/in/p-bhumika/"><img class="logos" src="linkedin2.png"  height="50" width="50"></a>
-                <a href=""><img src="skype2.png"class="logos"  height="50" width="50"></a>
-                <a href="https://github.com/Bhumika-P"><img src="Github2.png" class="logos"  height="50" width="50"></a>
+                <a href="https://www.facebook.com/bhumika.patel.737"><img class="logos" src="assets/icons/facebook2.png" height="50" width="50"></a>
+                <a href="https://www.linkedin.com/in/p-bhumika/"><img class="logos" src="assets/icons/linkedin2.png"  height="50" width="50"></a>
+                <a href=""><img src="assets/icons/skype2.png"class="logos"  height="50" width="50"></a>
+                <a href="https://github.com/Bhumika-P"><img src="assets/icons/Github2.png" class="logos"  height="50" width="50"></a>
         </div>
     </div>
 
@@ -52,9 +52,9 @@
                 <div class="w3-third  w3-cell" data-aos="flip-right" data-aos-duration="2000">
                    
                     <picture id="pic">
-                            <source srcset="me5.jpg" media="(max-width: 479px)">
-                            <source srcset="me4.jpg"  width="330" height="130">
-                            <img src="me4.jpg" id="me">
+                            <source srcset="assets/images/me5.jpg" media="(max-width: 479px)">
+                            <source srcset="assets/images/me4.jpg"  width="330" height="130">
+                            <img src="assets/images/me4.jpg" id="me">
                     </picture>
                  </div>
                  
@@ -219,7 +219,7 @@
                             My project included creating a survey analyzer for electronically interpreting and evaluating an 18-page natural health survey questionnaire.
                         </p><p>I developed the application on electron framework using front-end technology such as JavaScript, CSS, and HTML. The project included reading 
                             the pdf form of the survey line by line and create a ROF - report of findings which addresses the priority level of health problems of the person 
-                            who took the survey. 
+                            who took the survey. I successfully reduced the amount it takes to analyze the survey by approximately 67%. 
                             I loved this project since it made me think outside the box and gave me more experience in the area of being very precise with the data.
                         </p>
                     </div>
@@ -252,6 +252,23 @@
         <div id="projects" class= "w3-rest"><br>
                 <h2 id="h_projects" class="w3-content"  data-aos="zoom-in" data-aos-duration="1000">PROJECTS</h2>
                 <div class = "w3-row-padding">
+                    <div class ="w3-quarter" data-aos="fade-down" data-aos-duration="1000">
+                            <h4>September 2019 - PRESENT</h4>
+                            <hr>Gemini Station Mod Tree
+                            <br><button class="collapsible">Read more</button>
+                            <div class = "content w3-row-padding w3-left-align rightside">
+                                Applied Technical Skills: HTML, CSS, JavaScript
+                                <p>
+                                        I was offered a great opportunity to participate in the creation of content for Gemini Station, a browser based space rpg game, created by Jon Wenzel. 
+                                        The project that I am currently working on is a technology tree/hierarchy with tooltips. We are developing this appliction on github pages using HTML, CSS and JavaScript.
+                                        Currently we have json data from MySQL database that we are using to create the hierarchy along with many JavaScript libraries. 
+                                </p>
+                                <p>
+                                    I am enjoying working on this project and expanding my knowledge in using json data in  JavaScript.
+                                </p>
+                                
+                            </div>
+                    </div>
                     <div class = "w3-quarter w3-animate-bottom " data-aos="fade-down-left" data-aos-duration="1000">
                         <h4>August 2019 - PRESENT</h4>
                         <hr >Event Counter Plus
@@ -342,31 +359,31 @@
                             
                         </div>
                     </div>
-                    <div class ="w3-quarter" data-aos="fade-down" data-aos-duration="1000">
-                            <h4>September 2015 - December 2015</h4>
-                        <hr>Smart Bottle
-                        <br><button class="collapsible">Read more</button>
-                        <div class = "content w3-left-align rightside">
-                            Applied Technical Skills: OOP, Android
-                            <p>
-                                This project was about creating a smart water bottle. I was a team member of the software team. The main function of the water bottle is to
-                                measure and monitor the hydration of the user. We created the mobile application using Android Studio. The app interacts with the bottle using Bluetooth.
-                                When the user uses the bottle to drink water, the hardware keeps a record of the fluid level and sends the data to the mobile app. The user can then interacts
-                                with the app to check the hydration level. 
-
-                               
-                            </p>
-                            <p>
-                                    We achieved the project goal within the limited time frame. 
-
-                                    This was a challenging project for me since it involved interaction with hardware using short-range technology such as Bluetooth. Anyhow I enjoyed 
-                                    learning something new.
-                            </p>
-                        </div>
-                    </div>
-                    
+                   
                 </div>
                 <div class = "w3-row-padding">
+                        <div class ="w3-quarter" data-aos="fade-down" data-aos-duration="1000">
+                                <h4>September 2015 - December 2015</h4>
+                            <hr>Smart Bottle
+                            <br><button class="collapsible">Read more</button>
+                            <div class = "content w3-left-align rightside">
+                                Applied Technical Skills: OOP, Android
+                                <p>
+                                    This project was about creating a smart water bottle. I was a team member of the software team. The main function of the water bottle is to
+                                    measure and monitor the hydration of the user. We created the mobile application using Android Studio. The app interacts with the bottle using Bluetooth.
+                                    When the user uses the bottle to drink water, the hardware keeps a record of the fluid level and sends the data to the mobile app. The user can then interacts
+                                    with the app to check the hydration level. 
+    
+                                   
+                                </p>
+                                <p>
+                                        We achieved the project goal within the limited time frame. 
+    
+                                        This was a challenging project for me since it involved interaction with hardware using short-range technology such as Bluetooth. Anyhow I enjoyed 
+                                        learning something new.
+                                </p>
+                            </div>
+                        </div>
                         <div class ="w3-quarter" data-aos="fade-down-right" data-aos-duration="1000">
                                 <h4>September 2013 - April 2014</h4>
                             <hr>VEX Robot
@@ -392,12 +409,12 @@
         <div id = "contact" class= "w3-rest w3-animate-bottom"><br>
                 <h2 id="h_contact"  data-aos="zoom-in" data-aos-duration="1500">CONTACT</h2>
                
-                        <p><img src="location.png" height ="30" width = "30"><br>2861 Waterfront Avenue
+                        <p><img src="assets/icons/location.png" height ="30" width = "30"><br>2861 Waterfront Avenue
                             <br>Algonquin IL 60102 USA
-                            <br><img id = "phone" src="phone.png" height ="30" width = "30"><br>224-595-5222
-                            <br><img id = "mail" src ="mail.png" height ="30" width = "30"><br><a onclick="sendmail()">pbhumika.job@gmail.com</a>
+                            <br><img id = "phone" src="assets/icons/phone.png" height ="30" width = "30"><br>224-595-5222
+                            <br><img id = "mail" src ="assets/icons/mail.png" height ="30" width = "30"><br><a onclick="sendmail()">pbhumika.job@gmail.com</a>
                         </p>
-                        <a id="resume" href="Bhumika_1.5p.pdf">DOWNLOAD MY RESUME</a>
+                        <a id="resume" href="assets/doc/R_Bhumika_Bergman.docx">DOWNLOAD MY RESUME</a>
                 
             
                 
@@ -408,7 +425,7 @@
     <script>
         AOS.init();
       </script> 
-    <script src="portfolio.js"></script>
+    <script src="assets/js/portfolio.js"></script>
     
       
 </body>
