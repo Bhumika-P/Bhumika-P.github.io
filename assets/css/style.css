@@ -19,7 +19,6 @@ body {
 }
 
 h4 {
-  font-family: 'IM Fell Double Pica', serif;
   font-size: calc(16px+2vw);
 }
 
@@ -187,8 +186,9 @@ hr {
 
 .tital {
   font-size: calc(20px+1vw);
-  text-shadow: 1px 1px black;
-  color: #1ABC9C;
+  font-weight: 500; 
+  /*text-shadow: 1px 1px gray;*/
+  color: rgb(67, 155, 137);
 }
 
 #resume {
