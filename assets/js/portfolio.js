@@ -1,3 +1,31 @@
+var v1 = document.getElementById("h_about");
+var v2 = document.getElementById("h_skills");
+var v3 = document.getElementById("h_career");
+var v4 = document.getElementById("h_projects");
+var v5 = document.getElementById("h_contact");
+var v6 = document.getElementById("name");
+var v7 = document.getElementById("resume");
+function to_about() {
+  v1.scrollIntoView(true);
+}
+function to_skills() {
+  v2.scrollIntoView(true);
+}
+function to_career() {
+  v3.scrollIntoView(true);
+}
+function to_projects() {
+  v4.scrollIntoView(true);
+}
+function to_contact() {
+  v5.scrollIntoView(true);
+}
+function to_home() {
+  v6.scrollIntoView(true);
+}
+function to_resume() {
+  v7.scrollIntoView(true);
+}
 function sendmail() {
   window.open('mailto:test@example.com?subject=subject&body=body');
 }
@@ -44,35 +72,6 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-}
-
-var v1 = document.getElementById("h_about");
-var v2 = document.getElementById("h_skills");
-var v3 = document.getElementById("h_career");
-var v4 = document.getElementById("h_projects");
-var v5 = document.getElementById("h_contact");
-var v6 = document.getElementById("name");
-var v7 = document.getElementById("resume");
-function to_about() {
-  v1.scrollIntoView(true);
-}
-function to_skills() {
-  v2.scrollIntoView(true);
-}
-function to_career() {
-  v3.scrollIntoView(true);
-}
-function to_projects() {
-  v4.scrollIntoView(true);
-}
-function to_contact() {
-  v5.scrollIntoView(true);
-}
-function to_home() {
-  v6.scrollIntoView(true);
-}
-function to_resume() {
-  v7.scrollIntoView(true);
 }
 
 $(document).click(function () {

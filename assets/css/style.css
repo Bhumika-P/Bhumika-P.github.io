@@ -30,10 +30,11 @@ h4 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 7;
+  opacity:100;
 }
 
 .dropdown-content a {
@@ -41,10 +42,12 @@ h4 {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  z-index: 7;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
+  z-index:7;
 }
 
 .show {
@@ -53,14 +56,14 @@ h4 {
 
 h1 {
   text-align: center;
-  color: #1ABC9C;
+  color: #44B3BC;
   text-shadow: 2px 2px black;
   font-weight: bold;
 }
 
 h2 {
   text-align: center;
-  color: #1ABC9C;
+  color: #44B3BC;
   font-weight: bold;
   text-shadow: 1px 1px black
 }
@@ -81,7 +84,7 @@ h3 {
   }
   h1 {
     text-align: center;
-    color: #1ABC9C;
+    color:#44B3BC;
     text-shadow: 2px 2px black;
     font-weight: bold;
     font-size: 1.5em;
@@ -108,6 +111,7 @@ hr {
   border-style: inset;
   border-width: 1px;
   width: 70%;
+  z-index: -1;
 }
 
 #phone {
@@ -164,7 +168,7 @@ hr {
   color: white;
   cursor: pointer;
   padding: 8px;
-  width: 30%;
+  width: 35%;
   margin-top: 2%;
   margin-bottom: 5%;
   text-align: center;
@@ -178,7 +182,6 @@ hr {
 
 .content {
   font-size: calc(10px + 0.5vw);
-  ;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -188,16 +191,30 @@ hr {
   font-size: calc(20px+1vw);
   font-weight: 500; 
   /*text-shadow: 1px 1px gray;*/
-  color: rgb(67, 155, 137);
+  color: #44B3BC;
 }
-
+#resumediv{
+  text-align: center;
+}
 #resume {
-  text-shadow: 0.5px 1px black;
-  padding: 0 5%;
-  color: #333;
+  margin-top: 12px;
+  background-image: linear-gradient(rgba(33,245,255),rgb(1,36,68)); 
+  border: none;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-align: center;
+
+  color: white;
   font-weight: bold;
-  font-size: calc(14px+1vw);
-  margin-bottom: 5%;
+
+  box-shadow: 0 8px 16px 0 #4FA5BC, 0 6px 20px 0 rgba(218, 202, 202, 0.2);
 }
 
 #header {
@@ -234,6 +251,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1;
 }
 
 #info {
@@ -258,16 +276,16 @@ hr {
 }
 
 .logos:hover {
-  background-color: gray;
   border-radius: 50px;
 }
 
 #social :hover {
   width: 60px;
+  height: 60px;
 }
 
 #h_about {
-  color: #1ABC9C;
+  color: #44B3BC;
 }
 
 #about {
@@ -281,6 +299,7 @@ hr {
   padding-right: 5%;
   padding-left: 5%;
   font-size: calc(10px + 0.5vw);
+  z-index: -1;
 }
 
 #career {
@@ -451,7 +470,7 @@ hr {
 }
 
 .progress_b {
-  background-color: #1ABC9C;
+  background-color: #44B3BC;
   ;
 }
 
