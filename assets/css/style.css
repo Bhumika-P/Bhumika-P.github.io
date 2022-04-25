@@ -38,10 +38,20 @@ body {
   background-color:#e6e6e6 ;
   color: #333;
 }
+
+.accordion{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.school{
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .card{
   background-color: #333;
 }
-.card-title{
+.card-title, .card-header , .card-text{
   color: white;
 }
 .card-body{
@@ -57,14 +67,15 @@ a:hover {
 
 .dropbtn {
   padding: 16px;
-  font-size: calc(12px+0.5vw);
+  font-size: 1.2rem;
   border: none;
   cursor: pointer;
   border-radius: 12px;
+  z-index: 9999;
 }
 
 h4 {
-  font-size: calc(16px+2vw);
+  font-size: 1.2rem;
 }
 
 .dropdown {
@@ -120,7 +131,7 @@ h3 {
 }
 
 #motto {
-  font-size: calc(8px+1vw);
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width:415px) {
@@ -218,7 +229,7 @@ hr {
   margin-bottom: 5%;
   text-align: center;
   outline: none;
-  font-size: calc(1px+0.5vw);
+  font-size: 1.2rem;
 }
 
 .active, .collapsible:hover {
@@ -226,21 +237,21 @@ hr {
 }
 
 .content {
-  font-size: calc(10px + 0.5vw);
+  font-size: 1.2rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
 .tital {
-  font-size: calc(20px+1vw);
+  font-size: 1.2rem;
   font-weight: 500; 
   /*text-shadow: 1px 1px gray;*/
   color: #44B3BC;
 }
 
 .graytitle{
-  font-size: calc(20px+1vw);
+  font-size: 1.2rem;
   font-weight: 500; 
   /*text-shadow: 1px 1px gray;*/
   color: #2C7377;
@@ -360,7 +371,7 @@ hr {
   height: auto;
   background-color: #e6e6e6;
   text-align: left;
-  font-size: calc(10px + 0.5vw);
+  font-size: 1.2rem;
   color: #333;
   border: 1px solid white;
   padding-right: 5%;
@@ -383,7 +394,7 @@ hr {
 
 #skills {
   background-color: #333;
-  font-size: calc(10px + 0.5vw);
+  font-size:1.2rem;
   color: white;
   border: 1px solid white;
   padding-right: 10%;
@@ -396,7 +407,7 @@ hr {
   height: auto;
   background-color: #e6e6e6;
   text-align: center;
-  font-size: calc(10px + 0.5vw);
+  font-size: 1.2rem;
   color: #333;
 }
 
@@ -405,7 +416,7 @@ hr {
 }
 
 .rightside {
-  font-size: calc(8px + 0.5vw);
+  font-size: 1.2rem;
   text-align: left;
 }
 
