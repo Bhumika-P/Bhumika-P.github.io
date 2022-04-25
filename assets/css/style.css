@@ -5,9 +5,25 @@ html, body {
   overflow-x: hidden;
 }
 
+
 body {
   font-family: 'Noto Sans KR', sans-serif;
   border: 2px solid white;
+}
+
+#name{
+  color:white;
+}
+.pages{
+  margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+a:hover {
+  border: 1px dashed white;
+  color: #44B3BC;
 }
 
 .dropbtn {
@@ -192,6 +208,13 @@ hr {
   font-weight: 500; 
   /*text-shadow: 1px 1px gray;*/
   color: #44B3BC;
+}
+
+.graytitle{
+  font-size: calc(20px+1vw);
+  font-weight: 500; 
+  /*text-shadow: 1px 1px gray;*/
+  color: #2C7377;
 }
 #resumediv{
   text-align: center;
