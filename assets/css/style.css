@@ -20,10 +20,39 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+.accordion-item{
+  background-color:#e6e6e6 ;
+  color: #333;
+}
+.accordion-button:not(.collapsed){
+  background-color:#e6e6e6 ;
+  color: #333;
+  font-size: 1.5rem;
+}
+.accordion-button{
+  background-color:#2C7377 ;
+  color: white;
+  font-size: 1.3rem;
+}
+.accordion-body{
+  background-color:#e6e6e6 ;
+  color: #333;
+}
+.card{
+  background-color: #333;
+}
+.card-title{
+  color: white;
+}
+.card-body{
+  background-color: #333;
+  border: 1px solid #44B3BC;
+}
 
 a:hover {
   border: 1px dashed white;
   color: #44B3BC;
+  font-weight: 100;
 }
 
 .dropbtn {
@@ -321,7 +350,7 @@ hr {
   border: 1px solid white;
   padding-right: 5%;
   padding-left: 5%;
-  font-size: calc(10px + 0.5vw);
+  font-size: 1.2rem;
   z-index: -1;
 }
 
@@ -344,11 +373,12 @@ hr {
   height: auto;
   background-color: #333;
   text-align: center;
-  font-size: calc(10px + 0.5vw);
+  font-size: 1.2rem;
   color: white;
   border: 1px solid white;
   padding-right: 5%;
   padding-left: 5%;
+  padding-bottom: 1%;
 }
 
 #skills {
