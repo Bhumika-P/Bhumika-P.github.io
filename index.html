@@ -14,31 +14,42 @@
 </head>
 
 <body>
-    <div id="header">
-        <div class="dropdown" id="navbar1">
-            <picture>
-                <source srcset="assets/icons/menu-button-s.png" media="(max-width: 479px)">
-                <source srcset="assets/icons/menu-button.png">
-                <img src="assets/icons/menu-button.png" onclick="myButtonFunction()" class="dropbtn"
-                    style="background-color:#2C7377" style="width:auto;" alt="menu">
-            </picture>
-            <div class="dropdown-content" id="drop">
-                <a onclick="to_home()" style="cursor:pointer">HOME</a>
-                <a onclick="to_about()" style="cursor:pointer">ABOUT ME</a>
-                <a onclick="to_skills() " style="cursor:pointer">SKILLS</a>
-                <a onclick="to_career()" style="cursor:pointer">CAREER</a>
-                <a onclick="to_projects()" style="cursor:pointer">PROJECTS</a>
-                <a onclick="to_contact()" style="cursor:pointer">CONTACT</a>
-                <a onclick="to_resume()" style="cursor:pointer">RESUME</a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main Navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" onclick="to_home()" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="to_about()" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="to_skills()">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " onclick="to_career()">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="to_projects()">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="to_contact()">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <h1 style="font-size:400%;" class="w3-container bounceIn" id="name" data-aos="fade-right"
-            data-aos-duration="1500">BHUMIKA BERGMAN</h1>
-
-
-        <h3 style="color:white" class="w3-container" id="motto" data-aos="fade-left" data-aos-duration="1500">
-            CODER•DESIGNER•PROFESSIONAL</h3>
+    </nav>
+    <div class="container" id="header">
+        <div >
+            <h1 style="font-size:400%;" class="w3-container bounceIn" id="name" data-aos="fade-right"
+                data-aos-duration="1500">BHUMIKA BERGMAN</h1>
+            <h3 style="color:white" class="w3-container" id="motto" data-aos="fade-left" data-aos-duration="1500">
+                CODER•DESIGNER•PROFESSIONAL</h3>
+        </div>
         <div id="social">
             <a target="_blank" href="https://www.facebook.com/bhumika.patel.737"><img alt="Facebook account" class="logos" src="assets/icons/Fb2.png"
                     height="50" width="50"></a>

@@ -4,13 +4,13 @@ html, body {
   padding: 0px;
   overflow-x: hidden;
 }
-
-
 body {
   font-family: 'Noto Sans KR', sans-serif;
   border: 2px solid white;
 }
-
+a{
+  cursor:pointer;
+}
 #name{
   color:white;
 }
@@ -19,6 +19,16 @@ body {
     margin-right: 5%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+.navbar{
+  border:1px solid #2C7377;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  font-size: 1.2rem;
 }
 .accordion-item{
   background-color:#e6e6e6 ;
@@ -39,6 +49,9 @@ body {
   color: #333;
 }
 
+.navbar-toggler{
+  color:white;
+}
 .accordion{
   padding-left: 10%;
   padding-right: 10%;
@@ -50,6 +63,7 @@ body {
 }
 .card{
   background-color: #333;
+  
 }
 .card-title, .card-header , .card-text{
   color: white;
@@ -59,7 +73,7 @@ body {
   border: 1px solid #44B3BC;
 }
 
-a:hover {
+a:hover .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
   border: 1px dashed white;
   color: #44B3BC;
   font-weight: 100;
@@ -71,7 +85,7 @@ a:hover {
   border: none;
   cursor: pointer;
   border-radius: 12px;
-  z-index: 9999;
+  z-index: 999;
 }
 
 h4 {
@@ -89,7 +103,7 @@ h4 {
   background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 7;
+  z-index: 999;
   opacity:100;
 }
 
@@ -98,12 +112,12 @@ h4 {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  z-index: 7;
+  z-index: 999;
 }
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-  z-index:7;
+  z-index: 999;
 }
 
 .show {
@@ -288,6 +302,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 50px;
 }
 
 @media only screen and (min-width: 479px) {
