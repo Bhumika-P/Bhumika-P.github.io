@@ -30,6 +30,11 @@ a{
   color: white;
   font-size: 1.2rem;
 }
+li.nav-item{
+  width:100px;
+  text-align: center;
+  border-right: 0.5px solid rgb(104, 104, 104);
+}
 .accordion-item{
   background-color:#e6e6e6 ;
   color: #333;
@@ -73,7 +78,7 @@ a{
   border: 1px solid #44B3BC;
 }
 
-a:hover .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+a:hover .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, a:hover{
   border: 1px dashed white;
   color: #44B3BC;
   font-weight: 100;
@@ -336,7 +341,6 @@ hr {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
-  margin-top: 5%;
   z-index: 1;
 }
 
@@ -360,6 +364,7 @@ hr {
 #social :hover {
   width: 60px;
   height: 60px;
+  border:none;
 }
 
 #h_about {
