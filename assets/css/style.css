@@ -1,12 +1,13 @@
-html, body {
+body {
   width: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-}
-body {
   font-family: 'Noto Sans KR', sans-serif;
   border: 2px solid white;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 8%;
 }
 a{
   cursor:pointer;
@@ -21,10 +22,13 @@ a{
     margin-bottom: 2%;
 }
 .navbar{
-  border:1px solid #2C7377;
+  border: 2px solid #FF3333;
   background-color: #333;
   color: white;
   font-size: 1.2rem;
+  margin-left: 5%;
+  margin-right:5%;
+  border-radius: 10px;;
 }
 .navbar-dark .navbar-nav .nav-link{
   color: white;
@@ -131,11 +135,17 @@ h4 {
 
 h1 {
   text-align: center;
-  color: #44B3BC;
+  font-family: 'Marcellus SC', serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+#name {
+  text-align: left;
+  font-family: 'Marcellus SC', serif;
   text-shadow: 2px 2px black;
   font-weight: bold;
+  font-size: 3rem;
 }
-
 h2 {
   text-align: center;
   color: #44B3BC;
@@ -148,7 +158,10 @@ h3 {
   color: black;
   font-weight: bold;
 }
-
+.art{
+  margin-left: 3%;
+  font-size: 2rem;
+}
 #motto {
   font-size: 1.2rem;
 }
@@ -299,8 +312,8 @@ hr {
   box-shadow: 0 8px 16px 0 #4FA5BC, 0 6px 20px 0 rgba(218, 202, 202, 0.2);
 }
 
-#header {
-  background-image: url("../images/header7.jpg");
+/*#header {
+  background-color:#333;
   max-width: 100%;
   height: 600px;
   border: 1px solid #333;
@@ -312,7 +325,7 @@ hr {
 
 @media only screen and (min-width: 479px) {
   #header {
-    background-image: url("../images/header7.jpg");
+    background-image: url("../images/pattern.jpg");
     max-width: 100%;
     height: 900px;
     border: 1px solid #333;
@@ -320,6 +333,34 @@ hr {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+  }
+}
+*/
+#header {
+  max-width: 100%;
+  height: 800px;
+  border: 1px solid #333;
+  margin-top: 50px;
+  background-color: black;
+}
+#pattern{
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/pattern1.jpg");
+}
+#no-pattern{
+  max-width: 100%;
+  height: 800px;
+}
+
+@media only screen and (max-width: 766px) {
+  #pattern{
+    display: none;
+  }
+  #no-pattern, #header{
+    height: 400px;
   }
 }
 
@@ -376,26 +417,29 @@ hr {
   text-align: center;
   max-width: 100%;
   height: auto;
-  background-color: #e6e6e6;
+  /*background-color: #e6e6e6;*/
   color: #333;
   border: 1px solid white;
   padding-right: 5%;
   padding-left: 5%;
   font-size: 1.2rem;
   z-index: -1;
+  border: 2px solid #FF3333;
 }
 
 #career {
   align-content: center;
   max-width: 100%;
   height: auto;
-  background-color: #e6e6e6;
+  /*background-color: #e6e6e6;*/
   text-align: left;
   font-size: 1.2rem;
   color: #333;
   border: 1px solid white;
   padding-right: 5%;
   padding-left: 5%;
+  border: 2px solid #FF3333;
+  padding-bottom: 1%;
 }
 
 #projects {
@@ -425,10 +469,11 @@ hr {
   align-content: right;
   max-width: 100%;
   height: auto;
-  background-color: #e6e6e6;
+  /*background-color: #e6e6e6*/
   text-align: center;
   font-size: 1.2rem;
   color: #333;
+  border: 2px solid #FF3333;
 }
 
 .c_form {
@@ -718,4 +763,10 @@ hr {
   100% {
     width: 40%;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
