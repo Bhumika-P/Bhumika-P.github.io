@@ -16,34 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main Navigation">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse header3" id="navbarNav">
-                <ul class="navbar-nav menu3">
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_home()" aria-current="page">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_about()" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_skills()">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " onclick="to_career()">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_projects()">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_contact()">Contact</a>
-                    </li>
-            </div>
-            </div>
-    </nav>
+    <div w3-include-html="nav.html"></div> 
     <div class="container" id="header">
         <div class="row">
             <div class="col-sm-12 col-md-6" id="pattern">
@@ -414,6 +387,7 @@
             }, 200)
             ;
         </script>
+        <script>includeHTML();</script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
