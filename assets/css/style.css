@@ -112,17 +112,6 @@ li.nav-item > a:hover{
   margin-left: 10%;
   margin-right: 10%;
 }
-.card{
-  background-color: #333;
-  
-}
-.card-title, .card-header , .card-text{
-  color: white;
-}
-.card-body{
-  background-color: #333;
-  border: 1px solid #44B3BC;
-}
 
 a:hover{
   border: 1px dashed white;
@@ -451,7 +440,6 @@ hr {
 }
 #about{
   background-color: white;
-  border: 2px solid #FF3333;
 }
 #card-about > p{
   align-content: center;
@@ -502,7 +490,6 @@ hr {
   border: 1px solid white;
   padding-right: 5%;
   padding-left: 5%;
-  border: 2px solid #FF3333;
   padding-bottom: 1%;
 }
 
@@ -510,20 +497,20 @@ hr {
   align-content: center;
   max-width: 100%;
   height: auto;
-  background-color: #333;
   text-align: center;
   font-size: 1.2rem;
-  color: white;
+  color: black;
   border: 1px solid white;
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 1%;
 }
-
+a{
+  color:black;
+}
 #skills {
-  background-color: #333;
   font-size:1.2rem;
-  color: white;
+  color: black;
   border: 1px solid white;
   padding-right: 10%;
   padding-left: 10%;
@@ -583,7 +570,6 @@ hr {
 
 .skills-bar-container li .progressbar-title h3 {
   display: inline-block;
-  color: white;
 }
 
 .skills-bar-container li .progressbar-title .percent {
