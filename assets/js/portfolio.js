@@ -61,28 +61,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-window.onscroll = function () { myFunction() };
-
-var navbar = document.getElementById("navbar1");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-$(document).click(function () {
-  $("#dropdown-content").hide();
-});
-
-/* Clicks within the dropdown won't make
-   it past the dropdown itself */
-$("#dropdown-content").click(function (e) {
-  e.stopPropagation();
-});
 
 
 var lang = {

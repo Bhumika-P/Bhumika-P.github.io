@@ -9,107 +9,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&amp;family=Roboto+Condensed:wght@300;400&amp;display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <script src="assets/js/nav.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main Navigation">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" onclick="to_home()" aria-current="page">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_about()" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_skills()">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " onclick="to_career()">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_projects()">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="to_contact()">Contact</a>
-                    </li>
-            </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div w3-include-html="nav.html"></div> 
     <div class="container" id="header">
         <div class="row">
             <div class="col-sm-12 col-md-6" id="pattern">
 
             </div>
             <div class="col-sm-12 col-md-6" id="no-pattern">
-                <h1 class="w3-container bounceIn" id="name" data-aos="fade-right"
-                data-aos-duration="1500">BHUMIKA BERGMAN</h1>
-            <p style="color:white" id="motto" data-aos="fade-left" data-aos-duration="1500">
-                <br><span class="art">•CODER</span>
-                <br><span class="art">•DESIGNER</span>
-                <br><span class="art">•PROFESSIONAL</p></span>
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-lg-11 col-xl-11">
+                        <h1 class="w3-container bounceIn" id="name" data-aos="fade-right"
+                        data-aos-duration="1500">BHUMIKA BERGMAN</h1>          
+                        <p style="color:white" id="motto" data-aos="fade-left" data-aos-duration="1500">
+                            <br><span class="art">•CODER</span>
+                            <br><span class="art">•DESIGNER</span>
+                            <br><span class="art">•PROFESSIONAL</span>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-1 col-xl-1">
+                        <a class="social" target="blank" href="https://github.com/Bhumika-P">
+                            <i class="fa-brands fa-github fa-beat"></i>
+                        </a>
+                        <a class="social" target="blank" href="https://www.linkedin.com/in/p-bhumika/">
+                            <i class="fa-brands fa-linkedin fa-beat"></i>
+                        </a>
+                        <a class="social" target="blank" href="https://github.com/Bhumika-P">
+                            <i class="fa-brands fa-facebook fa-beat"></i>
+                        </a>  
+                    </div>
+                </div>
+                          
+                          
             </div>
         </div>
-
         </div>
-        <div id="about" class="w3-rest w3-row">
+
+        <div id="about">
             <h2 id="h_about">ABOUT ME</h2>
-
-            <div id="animation_about" class="info">
-                    <p>
-                        I am Bhumika Bergman, a fellow computer engineer. I graduated in February 2018. This portfolio
-                        will give you insight into my career, projects and contact information.
-
-
-                        One of my favorite mottoes is "There is always room for Improvement". And I thrive to apply it
-                        in my life. As a kid, I was fascinated with computers and it didn't
-                        take me long to decide what I wanted to pursue in my future. I have explored many venues in my
-                        career and I have learned that I really enjoy programming.
-                        I like web-development, software development. I am a very creative person and I love to pour my
-                        creativity into my work. I am a quick learner and I like learning
-                        new things. I am very eager to further my knowledge and skills. My vision is to keep moving
-                        forward in my career.
+            <div class="row g-0">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                  <img id="potrait" src="./assets/images/about.jpg" class="img-fluid" alt="Bhumika Bergman's Potrait">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                  <div class="card-body" id="card-about">
+                    <h3 class="card-title">Creative, Driven, Resilient </h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        I graduated as a Computer Engineer in February 2018. One of my favorite mottoes is "There is always room for improvement". 
+                        And I thrive to apply it in my life. As a kid, I was fascinated with computers and it didn't take me long to decide what I wanted to pursue in my career. 
+                        I have explored many avenues in my career and I have learned that I enjoy programming where I can be creative.
                     </p>
-                    <br>
-                    <p>
-                        Other than programming, I enjoy doing things with my family and friends. I like playing video
-                        games, reading novels and cooking.
-                        I love working out and taking bike rides. My love for food and coffee is eternal. Baking with my
-                        family is one of my favorite things to do.
-                        I also enjoy decorating and organizing. I like living in an organized environment as opposed to
-                        clutter.
-                        Others have told me that I think outside the box to get something done.
+                    <p class="card-text">
+                        I like web design, web development, and software development. I am a very creative person and I love to pour my creativity into my work. I am a quick learner and I like learning new things. I am also extremely resourceful. 
+                        If I don't know how to do something, I figure it out! I am very eager to further my knowledge and skills. My vision is to keep moving forward in my career.
                     </p>
-                    <br>
-                    <p>
-                        Now I would like to talk a little about my background. I was born in India. After highschool, I
-                        enrolled in
-                        Computer Engineering at MS University located at Gujarat, India in May 2011. After two years of
-                        engineering, I moved to Toronto, Canada in May 2013.
-                        I wanted to continue schooling in Computer Engineering at York University but I was told that
-                        I have to start from beginning and I can't continue where I left off back in India because most
-                        of my credits weren't recognized
-                        . I started studying first year
-                        Computer Engineering in September 2013. And I graduated in February 2018. During my university
-                        time, I met my soulmate and we eventually got engaged.
-                        After that, I acquired a K-1 visa and moved to Chicago, IL in December 2018.
-                        I married my fiance on February 23, 2019.
-                        I then applied for both green card and work permit. Hence I acquired a work permit and I am
-                        eligible to work in the USA.
-                        Currently, I am actively looking for a position
-                        as an entry-level front-end/software developer in the Chicago area.
+                    <p class="card-text">
+                        I like challenges in my position. Web development has become a perfect challenging outlet where I can apply my creativity. 
+                        I love seeing the results of my efforts in helping users and the company. I also love the logic and structure of coding and strive to write scalable and efficient code. 
+                        My current position as a Digital Accessibility Developer has greatly increased my accessibility awareness. 
+                        I am passionate about creating an accessible design that helps a wide variety of audiences. 
+                        I am also a problem solver. I have a knack for identifying and solving bugs in code. 
                     </p>
+                    <p class="card-text">
+                        I enjoy doing things with my family and friends. I like playing video games, reading novels, and cooking. I love working out and taking bike rides. 
+                        My love for food and coffee is eternal. Baking with my family is one of my favorite things to do. I also enjoy decorating and organizing. 
+                        I like living in an organized environment as opposed to clutter. Others have told me that I think outside the box to get something done.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+        
 
 
 
@@ -182,9 +158,6 @@
                         </div>
                     </li>
                 </div>
-
-
-
             </ul>
         </div>
 
@@ -323,47 +296,41 @@
             <h2 id="h_projects" class="w3-content">PROJECTS</h2>
                 
         <div class="row g-4 row-col-3"><br>          
-            <div class="card col-sm-2 col-md-4 col-lg-3">
+            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div class="card-body">
                   <h3 class="card-title">January 2021 - March 2021</h3><hr>
                   <a href="./assets/pages/transcript.html">Transcript Generator</a>   
                 </div>
             </div>        
-            <div class="card col-sm-2 col-md-4 col-lg-3">
+            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div class="card-body">
                   <h3 class="card-title">August 2019 - July 2020</h3><hr>
                   <a href="./assets/pages/event-counter.html">Event Counter Plus</a>   
                 </div>
             </div>
-            <div class="card col-sm-2 col-md-4 col-lg-3">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div class="card-body">
                   <h3 class="card-title">September 2016 - April 2017</h3><hr>
                   <a href="./assets/pages/amd.html">AMD application</a>   
                 </div>
             </div>
-            <div class="card col-sm-2 col-md-4 col-lg-3">
+            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div class="card-body">
                   <h3 class="card-title">September 2016 - December 2016</h3><hr>
                   <a href="./assets/pages/messenger.html">Hospital Messenger System</a>   
                 </div>
             </div>
-            <div class="col-sm-2 col-md-4 col-lg-3">
-               
-            </div>
-            <div class="card col-sm-2 col-md-4 col-lg-3">
+            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div class="card-body">
                   <h3 class="card-title">September 2015 - December 2015</h3><hr>
                   <a href="./assets/pages/bottle.html">Smart Bottle</a>
                 </div>
             </div>
-            <div class="card col-sm-2 col-md-4 col-lg-3">
+            <div class="card col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div class="card-body">
                   <h3 class="card-title">September 2013 - April 2014</h3><hr>
                   <a href="./assets/pages/robot.html">VEX Robot</a>
                 </div>
-            </div>
-            <div class="col-sm-2 col-md-4 col-lg-3">
-               
             </div>
         </div> 
     </div>        
@@ -396,6 +363,30 @@
             </div>
             <br>
         </div>
+        <div class="preloader">
+            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" 
+            preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2">
+                <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/>
+                </circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" 
+                keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" 
+                keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg>
+        </div>
+        <script>
+            const preloader = document.querySelector('.preloader');
+            window.onload = setInterval(() => {
+            // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
+            if (!preloader.style.opacity) {
+                preloader.style.opacity = 1;
+            }
+            if (preloader.style.opacity > 0) {
+                preloader.style.opacity -= 0.1;
+            } else {
+               clearInterval();
+            }
+            }, 200)
+            ;
+        </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
