@@ -863,7 +863,7 @@ a{
   margin-bottom: 150px;
 }
 
-.card{
+.timeline  .card{
   width: 45%;
   padding: 30px;
   border-radius: 10px;
@@ -874,11 +874,11 @@ a{
   background: #f00;
 }
 
-.card:nth-child(even){
+.timeline .card:nth-child(even){
   margin-left: auto;
 }
 
-.card:nth-child(even):before{
+.timeline .card:nth-child(even):before{
   content: '';
   position: absolute;
   left: -15%;
@@ -890,7 +890,7 @@ a{
   border-radius: 50%;
 }
 
-.card:nth-child(even):after{
+.timeline .card:nth-child(even):after{
   content: '';
   position: absolute;
   left: -8.5%;
@@ -902,7 +902,7 @@ a{
   z-index: -1;
 }
 
-.card:nth-child(odd):before{
+.timeline .card:nth-child(odd):before{
   content: '';
   position: absolute;
   right: -13%;
@@ -914,7 +914,7 @@ a{
   border-radius: 50%;
 }
 
-.card:nth-child(odd):after{
+.timeline .card:nth-child(odd):after{
   content: '';
   position: absolute;
   right: -8.5%;
@@ -926,23 +926,23 @@ a{
   z-index: -1;
 }
 
-.card:nth-child(2), .card:nth-child(2):before{
+.timeline .card:nth-child(2), .card:nth-child(2):before{
   background: #663399;
 }
-.card:nth-child(3), .card:nth-child(3):before{
+.timeline .card:nth-child(3), .card:nth-child(3):before{
   background: #2D8653;
 }
-.card:nth-child(4), .card:nth-child(4):before{
+.timeline .card:nth-child(4), .card:nth-child(4):before{
   background: #4169e1;
 }
-.card:nth-child(5), .card:nth-child(5):before{
+.timeline .card:nth-child(5), .card:nth-child(5):before{
   background: #DB3A00;
 }
-.card:nth-child(6), .card:nth-child(6):before{
+.timeline .card:nth-child(6), .card:nth-child(6):before{
   background: #4fa0ff;
 }
 
-.card:nth-child(even) .card-body:before{
+.timeline .card:nth-child(even) .card-body:before{
   content: '';
   position: absolute;
   left: -12%;
@@ -952,7 +952,7 @@ a{
   border: 1px dashed #fff;
   z-index: -1;
 }
-.card-title{
+.timeline .card-title{
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 20px;
