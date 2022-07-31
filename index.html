@@ -89,27 +89,7 @@
                 keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" 
                 keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg>
         </div>
-        <script>
-            const preloader = document.querySelector('.preloader');
-            window.onload = setInterval(() => {
-            // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
-            if (!preloader.style.opacity) {
-                preloader.style.opacity = 1;
-            }
-            if (preloader.style.opacity > 0) {
-                preloader.style.opacity -= 0.1;
-            } else {
-               clearInterval();
-            }
-            }, 200);
-
-
-            // Add active class to the current button (highlight it)
-            $(".navbar-nav .nav-link").on("click", function(){
-                $(".navbar-nav").find(".active").removeClass("active");
-                $(this).addClass("active");
-                });
-</script>
+        
         </script>
         <script>includeHTML();</script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

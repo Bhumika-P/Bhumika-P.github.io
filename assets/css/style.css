@@ -435,9 +435,7 @@ hr {
 #h_about {
   color: #44B3BC;
 }
-#about{
-  background-color: white;
-}
+
 #card-about > p{
   align-content: center;
   text-align: center;
@@ -446,7 +444,6 @@ hr {
   color: #333;
   font-size: 1.1rem;
   z-index: -1;
-  background-color: white;
 }
 #card-about{
   background-color: white;
@@ -464,7 +461,6 @@ hr {
   /*background-color: #e6e6e6;*/
   background: white;
   border-radius: 48%;
-  margin-top: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -591,8 +587,8 @@ a{
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-fill-mode: both;
@@ -602,43 +598,43 @@ a{
 .skills-bar-container li .bar-container #progress-html {
   -webkit-animation-name: progress-html;
   animation-name: progress-html;
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .skills-bar-container li .bar-container #progress-css {
   -webkit-animation-name: progress-css;
   animation-name: progress-css;
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
+  -webkit-animation-delay: 1.0s;
+  animation-delay: 1.0s;
 }
 
 .skills-bar-container li .bar-container #progress-javascript {
   -webkit-animation-name: progress-javascript;
   animation-name: progress-javascript;
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
 }
 
 .skills-bar-container li .bar-container #progress-java {
   -webkit-animation-name: progress-java;
   animation-name: progress-java;
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
 }
 
 .skills-bar-container li .bar-container #progress-sql {
   -webkit-animation-name: progress-sql;
   animation-name: progress-sql;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 3.1s;
+  animation-delay: 3.1s;
 }
 
 .skills-bar-container li .bar-container #progress-as {
   -webkit-animation-name: progress-as;
   animation-name: progress-as;
-  -webkit-animation-delay: 4.2s;
-  animation-delay: 4.2s;
+  -webkit-animation-delay: 3.8s;
+  animation-delay: 3.8s;
 }
 
 .progress_b {
@@ -696,7 +692,7 @@ a{
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 70%;
   }
 }
 
@@ -750,7 +746,7 @@ a{
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 70%;
   }
 }
 
@@ -804,7 +800,7 @@ a{
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 70%;
   }
 }
 
@@ -853,6 +849,9 @@ a{
   color: white;
   font-size: 1.5rem;
 }
+.career-page a{
+  color: white;
+}
 .timeline{
   display: block;
   width: 80%;
@@ -881,7 +880,7 @@ a{
 .timeline .card:nth-child(even):before{
   content: '';
   position: absolute;
-  left: -15%;
+  left: -13.5%;
   top: 50%;
   transform: translateY(-50%);
   width: 20px;

@@ -61,15 +61,13 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
-
 var lang = {
   "html": "90%",
   "css": "80%",
   "javascript": "70%",
   "java": "78%",
   "sql": "40%",
-  "as": "40%"
+  "as": "70%"
 };
 
 var multiply = 4;
@@ -85,3 +83,23 @@ $.each(lang, function (language, pourcent) {
   multiply++;
 
 });
+
+//preloader animation
+
+const preloader = document.querySelector('.preloader');
+window.onload = setInterval(() => {
+           // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval();
+  }
+  }, 200);
+            // Add active class to the current button (highlight it)
+  $(".navbar-nav .nav-link").on("click", function(){
+    $(".navbar-nav").find(".active").removeClass("active");
+      $(this).addClass("active");
+    });
