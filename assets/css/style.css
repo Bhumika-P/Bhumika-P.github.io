@@ -180,13 +180,20 @@ h1 {
 h2 {
   text-align: center;
   color: black;
-  font-weight: bold;
   text-shadow: 1px 1px black
 }
 #soft-skills{
   font-size: 1.4rem;
   line-height: 3rem;
-  
+}
+#soft .card{
+  font-size: 1.2rem;
+  line-height: 3rem;
+  border: 2px solid red;
+  color: white;
+  background-color: #333;
+  padding: 10%;
+  margin: auto;
 }
 h3 {
   text-align: center;
@@ -441,19 +448,23 @@ hr {
   text-align: center;
   height: auto;
   /*background-color: #e6e6e6;*/
-  color: #333;
+  color: #c4c4c4;
   font-size: 1.1rem;
   z-index: -1;
 }
 #card-about{
-  background-color: white;
   border:none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
 }
 #card-about > .card-body{
   border: none;
 }
 #card-about > .card-title{
-  color: #333;
+  color: white;
+  text-align: center;
 }
 #potrait{
   opacity: 0.8;
@@ -465,6 +476,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  
 }
 #potrait:hover{
   -webkit-transform: scale(1.2);
@@ -501,11 +513,12 @@ a{
 #skills {
   font-size:1.2rem;
   color: black;
-  border: 1px solid white;
   padding-right: 10%;
   padding-left: 10%;
 }
-
+#about h2{
+  color:white;
+}
 #contact {
   align-content: right;
   max-width: 100%;
@@ -587,8 +600,8 @@ a{
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-fill-mode: both;
@@ -746,7 +759,7 @@ a{
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -800,7 +813,7 @@ a{
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 

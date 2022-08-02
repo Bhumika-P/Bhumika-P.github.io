@@ -67,7 +67,7 @@ var lang = {
   "javascript": "70%",
   "java": "78%",
   "sql": "40%",
-  "as": "70%"
+  "as": "90%"
 };
 
 var multiply = 4;
