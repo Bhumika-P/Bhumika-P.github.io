@@ -4,11 +4,9 @@ body {
   padding: 0px;
   overflow-x: hidden;
   font-family: 'Noto Sans KR', sans-serif;
-  border: 2px solid white;
-  padding-left: 8%;
-  padding-right: 8%;
   padding-bottom: 8%;
-  
+  background-color: #333;
+  color: #c4c4c4;
 }
 #corner{
   top: 0px;
@@ -505,9 +503,6 @@ hr {
   color: black;
   border: 1px solid white;
 }
-a{
-  color:black;
-}
 #skills {
   font-size:1.2rem;
   color: black;
@@ -524,7 +519,7 @@ a{
   /*background-color: #e6e6e6*/
   text-align: center;
   font-size: 1.2rem;
-  color: #333;
+  color: #c4c4c4;
 }
 
 .c_form {
