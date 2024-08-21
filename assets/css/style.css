@@ -4,7 +4,7 @@ body {
   padding: 0px;
   overflow-x: hidden;
   font-family: 'Noto Sans KR', sans-serif;
-  padding-bottom: 8%;
+  /*padding-bottom: 8%;*/
   background-color: #333;
   color: #c4c4c4;
 }
@@ -376,11 +376,11 @@ hr {
   background-color: black;
 }
 #pattern{
-  height: 800px;
+  height: 797px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../images/pattern1.jpg");
+  background-image: url("../images/header7.jpg");
 }
 #no-pattern{
   max-width: 100%;
