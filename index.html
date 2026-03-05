@@ -1,102 +1,1274 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Noto+Sans+KR|IM+Fell+Double+Pica|Playball|Titan+One" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&amp;family=Roboto+Condensed:wght@300;400&amp;display=swap" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="assets/js/nav.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhumika Bergman Portfolio">
+
+  <title>Bhumika Bergman Portfolio</title>
+  <meta name="description" content="Portfolio of Bhumika Bergman, UX designer and web developer specializing in accessible web experiences, modern UI design, and front-end development.">
+  <meta name="author" content="Bhumika Bergman">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Bhumika Bergman | UX Designer & Web Developer">
+  <meta property="og:description" content="Portfolio showcasing UX design, front-end development, and accessible web experiences by Bhumika Bergman.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhumika-p.github.io/">
+  <link rel="canonical" href="https://bhumika-p.github.io/work.html">
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 
 <body>
-    <div w3-include-html="nav.html"></div> 
-    <div class="container" id="header">
-        <div class="row">
-            <div class="col-sm-12 col-md-6" id="pattern">
+
+  <!-- Cursor Animation 
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>-->
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+  </div>
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <!--<div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">Cursor</h2>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>-->
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">mode</h2>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="light">light</button>
+          <button data-mode="dark">dark</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">Language Support</h2>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+  <!-- Scroll Smoother -->
+  <div class="has-smooth" id="has_smooth"></div>
+
+  <!-- Go Top Button -->
+  <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+  <!-- Porfolio Cursor -->
+  <div class="cursor large" id="portf_cursor_6">View <br>Project</div>
+
+  <!-- Header area start -->
+  <header class="header__area-2">
+    <div class="header__inner-5">
+      <div class="header__logo-5">
+        <a href="index.html" class="logo-dark"><img src="assets/imgs/logo/bb-logo-dark.png" alt="Site Logo"></a>
+        <a href="index.html" class="logo-light"><img src="assets/imgs/logo/bb-logo-white.png" alt="Site Logo"></a>
+      </div>
+      <div class="header__nav-icon-5">
+        <button id="open_offcanvas"><span class="menu-text-pp">Menu</span><img src="assets/imgs/icon/menu-black.png"
+            alt="Menubar Icon"></button>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+  <!-- Offcanvas area start -->
+  <div class="offcanvas__area" role="dialog" aria-modal="true" aria-labelledby="offcanvasTitle">
+    <div class="offcanvas__body">
+      <!-- LEFT: logo + social/quick links -->
+      <div class="offcanvas__left">
+        <div class="offcanvas__logo">
+          <a href="index.html">
+            <img src="assets/imgs/logo/bb-logo-white.png" alt="Bhumika Bergman logo">
+          </a>
+        </div>
+
+        <div class="offcanvas__social">
+          <h3 id="offcanvasTitle" class="social-title">Connect</h3>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/your-handle" rel="me">LinkedIn</a></li>
+            <li><a href="https://github.com/bhumika-p" rel="me">GitHub</a></li>
+            <li><a href="mailto:bhumikabergman@gmail.com">Email</a></li>
+            <li><a href="https://bhumika-p.github.io/assets/docs/Bhumika-Bergman-Resume.pdf" download>Download Résumé</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MID: primary nav (trimmed) -->
+      <div class="offcanvas__mid">
+        <div class="offcanvas__menu-wrapper">
+          <nav class="offcanvas__menu" role="navigation" aria-label="Primary">
+            <ul class="menu-anim">
+              <li><a href="index.html" aria-current="page">Home</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#certs">Certifications</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- RIGHT: contact (from résumé) -->
+      <div class="offcanvas__right">
+        <!-- Remove search to reduce clutter -->
+        <div class="offcanvas__contact  d-flex flex-column justify-content-center min-vh-100 position-relative">
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="tel:+12245955222">+1 (224) 595-5222</a></li>
+            <li><a href="mailto:bhumikabergman@gmail.com">bhumikabergman@gmail.com</a></li>
+            <li>Pingree Grove, IL</li>
+          </ul>
+        </div>
+        <img src="assets/imgs/shape/11.png" alt="" class="shape-1" aria-hidden="true">
+        <img src="assets/imgs/shape/12.png" alt="" class="shape-2" aria-hidden="true">
+      </div>
+
+      <div class="offcanvas__close">
+        <button type="button" id="close_offcanvas" aria-label="Close menu">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanvas area end -->
+
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main>
+        <div class="portfolio__page">
+          <div class="swiper portfolio__main-slider">
+            <div class="swiper-wrapper portfolio__main-wrapper">
+              <!-- Hero -->
+              <div class="swiper-slide">
+                <section class="portfolio__hero-area portfolio-section">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xxl-12">
+                        <div class="portfolio__hero">
+                          <h1 class="title shape-circle">Web UI/UX</h1>
+                          <h2 class="title text-stroke">Designer</h2>
+                          <h2 class="title">Developer</h2>
+                          <p class="fs-5 text-center">
+                            Engineering enterprise web platforms across PHP, Java, APIs,
+                            and modern front-end architecture — with a strong focus on
+                            accessibility, scalability, and performance.
+                          </p>
+                          <!--<div class="btn-wrapper">
+                            <a href="#about" class="wc-btn-dark">View all work</a>
+                          </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!-- Hero End -->
+              <!-- About -->
+              <div class="swiper-slide" id="about">
+                <section class="portfolio-section portfolio__about pt-140 pb-150">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xxl-8 col-lg-8">
+                        <div class="portfolio__about-left">
+                          <h2 class="sec-title">
+                            I craft thoughtful <span>web experiences</span> for people
+                          </h2>
+                          <img src="assets/imgs/shape/16.png" alt="Shape">
+                        </div>
+                      </div>
+                      <div class="col-xxl-4 col-lg-4">
+                        <div class="sec-text">
+                          <p>
+                            I design and build clean, responsive, and accessible websites. My work pairs UI/UX thinking
+                            with
+                            practical front-end development—turning ideas into fast, usable pages and components that
+                            are easy
+                            to maintain. I’m steadily expanding my back-end fundamentals while keeping my focus on great
+                            web
+                            experiences.
+                          </p>
+                          <!--<a href="about.html" class="wc-btn-dark">About me</a>-->
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Replace the “brands” row with principles / focus -->
+                    <div class="about-row">
+                      <div class="row">
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
+                          <div class="brand-title-wrap">
+                            <h3 class="brand-title">What I’m about</h3>
+                          </div>
+                        </div>
+                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8">
+                          <div class="brand-list">
+                            <div class="brand-logo"><span>Accessibility-first development</span></div>
+                            <div class="brand-logo"><span>Performance & SEO improvements</span></div>
+                            <div class="brand-logo"><span>Responsive, future-friendly design</span></div>
+                            <div class="brand-logo"><span>Scalable content management</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="about-row mt-0">
+                      <div class="row">
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
+                          <div class="brand-title-wrap">
+                            <h3 class="brand-title">Currently</h3>
+                          </div>
+                        </div>
+                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8">
+                          <div class="brand-list">
+                            <div class="brand-logo"><span>Polishing UI/UX patterns</span></div>
+                            <div class="brand-logo"><span>Refactoring components for reuse</span></div>
+                            <div class="brand-logo"><span>Light API integration & templating</span></div>
+                            <div class="brand-logo"><span>Learning DB + backend basics</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </section>
+              </div>
+              <!-- About End-->
+              <!-- Work Experience-->
+              <div class="swiper-slide" id="work">
+                <section class="portfolio-section portfolio__project">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xxl-12">
+                        <div class="pp-title-wrap mb-5">
+                          <h2 class="sec-title">WORK <br> EXPERIENCE</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!--
+                    <div class="row">
+                      <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-8">
+                        <div class="pp-slider-wrapper">
+                          <div class="swiper portfolio__project-slider">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide my-auto pp-slide">
+                                <div class="text-center mx-auto">
+                                  <h3 class="pp-slide-title text-center ">Senior Web Developer & UX/UI Designer</h3>
+                                  <ul class="thumb-points">
+                                    <li>Drove WCAG 2.1 AA compliance across college websites, resolving accessibility
+                                      issues proactively</li>
+                                    <li>Streamlined updates by building scalable templates & content types in
+                                      TerminalFour CMS.</li>
+                                    <li>Improved SEO performance +17% through Core Web Vitals optimization and
+                                      structured metadata.</li>
+                                    <li>Delivered advanced search with Funnelback, including facets and custom data
+                                      collections.</li>
+                                    <li>Automated content syndication with PHP/Blade-based XML & RSS feeds.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide my-auto pp-slide">
+                                <div class="text-center mx-auto">
+                                  <h3 class="pp-slide-title text-center ">Portal Management Administration Assistant
+                                  </h3>
+                                  <ul class="thumb-points">
+                                    <li>Contributed front-end web development for a WordPress-based student portal
+                                      project.</li>
+                                    <li>Accelerated delivery by ~15 days by gathering user requirements early.</li>
+                                    <li>Boosted system performance by 10% through bug fixes and student tech support.
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div class="swiper-slide my-auto pp-slide">
+                                <div class="text-center mx-auto">
+                                  <h3 class="pp-slide-title text-center ">Freelance Application Developer</h3>
+                                  <ul class="thumb-points">
+                                    <li>Reduced survey analysis time by 67% with a custom cross-platform analyzer
+                                      application.</li>
+                                    <li>Developed using Electron, HTML/CSS, and JavaScript with a focus on code
+                                      maintainability.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide my-auto pp-slide">
+                                <div class="text-center mx-auto">
+                                  <h3 class="pp-slide-title text-center ">Service Advisor</h3>
+                                  <ul class="thumb-points">
+                                    <li>Maintained 9/10 average in customer surveys by delivering tailored solutions and
+                                      proactive service.</li>
+                                    <li>Supported colleagues and trained new employees in design and printing workflows.
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide my-auto pp-slide">
+                                <div class="text-center mx-auto">
+                                  <h3 class="pp-slide-title text-center ">Front-End Web Developer & Manager</h3>
+                                  <ul class="thumb-points">
+                                    <li>Built a fully responsive website with intuitive UI/UX, student portal, and
+                                      eCommerce.</li>
+                                    <li>Improved page load time by 20% through debugging, asset optimization, async
+                                      loading, and code minification.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide my-auto pp-slide">
+                                <div class="text-center mx-auto">
+                                  <h3 class="pp-slide-title text-center ">Digital Accessibility Developer</h3>
+                                  <ul class="thumb-points">
+                                    <li>Boosted website accessibility by 15% in four months through targeted WCAG 2.0 AA
+                                      remediation.</li>
+                                    <li>Performed accessibility testing with Siteimprove and implemented standards-based
+                                      fixes.</li>
+                                    <li>Advised stakeholders and leadership as a subject matter expert on inclusive
+                                      design.</li>
+                                    <li>Remediated Word, PowerPoint, and PDF documents for accessibility compliance.
+                                    </li>
+                                    <li>Delivered staff training on accessible document and content creation practices.
+                                    </li>
+                                    <li>Managed content creation and CMS updates while maintaining site integrity.</li>
+                                    <li>Tracked tasks and deadlines with Jira to balance multiple project priorities.
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide my-auto pp-slide">
+                                <div class="text-center mx-auto">
+                                  <h3 class="pp-slide-title text-center ">UX/UI Designer</h3>
+                                  <ul class="thumb-points">
+                                    <li>Designed wireframes & page structures to improve usability and meet WCAG 2.1 AA
+                                      standards.</li>
+                                    <li>Resolved accessibility violations identified through audits and testing.</li>
+                                    <li>Advised senior stakeholders on digital accessibility best practices for
+                                      high-impact projects.</li>
+                                    <li>Built scalable TerminalFour CMS layouts & content types to streamline authoring.
+                                    </li>
+                                    <li>Fixed front-end issues affecting accessibility, usability, and SEO performance.
+                                    </li>
+                                    <li>Applied SEO optimizations during content updates and design enhancements.</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+
+
+                          <div class="pp-prev swipper-btn">Next</div>
+                          <div class="pp-next swipper-btn">Prev</div>
+                        </div>
+                      </div>
+
+                      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
+                        <div class="swiper portfolio__project-thumbs">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="pp-slide-thumb">
+                                <h3 class="pp-slide-title">Elgin Community College</h3>
+                                <p>September 2022 – Present</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="pp-slide-thumb">
+                                <h3 class="pp-slide-title">New Eden School of Natural Health and Herbal Studies</h3>
+                                <p>March 2016 – April 2017</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="pp-slide-thumb">
+                                <h3 class="pp-slide-title">Primitius International</h3>
+                                <p>January 2018 – November 2018</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="pp-slide-thumb">
+                                <h3 class="pp-slide-title">Office Depot</h3>
+                                <p>September 2019 – October 2020</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="pp-slide-thumb">
+                                <h3 class="pp-slide-title">National Institute for Optimal Wellness</h3>
+                                <p>September 2019 – October 2020</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="pp-slide-thumb">
+                                <h3 class="pp-slide-title">Elgin Community College</h3>
+                                <p>November 2020 – September 2022</p>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="pp-slide-thumb">
+                                <h3 class="pp-slide-title">Mayo Clinic College of Medicine & Science</h3>
+                                <p>October 2024 – Present</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    -->
+                    <!-- EXPERIENCE CARDS (Swiper: 3 visible on desktop) -->
+                    <div class="row">
+                      <div class="col-12">
+
+                        <div class="pp-slider-wrapper experience-swiper">
+                          <!-- Prev / Next OVERLAY -->
+
+
+                          <!-- Slider -->
+                          <div class="swiper experience-cards-slider">
+                            <div class="swiper-wrapper">
+
+                              <!-- 1) Senior Web Developer & UX/UI Designer -->
+                              <div class="swiper-slide">
+                                <div class="card h-100 border-0 shadow-sm">
+                                  <div class="card-body">
+                                    <h3 class="service__title-7 fs-3">Senior Web Developer &amp; UX/UI Designer</h3>
+                                    <p class="mb-2 work-loc">Elgin Community College <br> September 2022 – Present</p>
+                                    <p class="card-text">
+                                      Led front-end development, UX/UI design, accessibility, and performance
+                                      optimization
+                                      across multiple college websites and digital platforms.
+                                    </p>
+                                    <ul class="mb-0">
+                                      <li>Drove WCAG 2.1 AA compliance across college websites</li>
+                                      <li>Built scalable templates and content types in TerminalFour CMS</li>
+                                      <li>Improved SEO performance by 17% via Core Web Vitals optimization</li>
+                                      <li>Implemented advanced search with Funnelback</li>
+                                      <li>Automated XML &amp; RSS feeds using PHP and Blade</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- 2) UX/UI Designer -->
+                              <div class="swiper-slide">
+                                <div class="card h-100 border-0 shadow-sm">
+                                  <div class="card-body">
+                                    <h3 class="service__title-7 fs-3">UX/UI Designer</h3>
+                                    <p class="mb-2 work-loc">Mayo Clinic College of Medicine &amp; Science <br> October
+                                      2024 –
+                                      Present</p>
+                                    <p class="card-text">
+                                      Designs accessible, scalable interfaces while advising senior stakeholders on
+                                      usability
+                                      and inclusive design best practices.
+                                    </p>
+                                    <ul class="mb-0">
+                                      <li>Designed wireframes aligned with WCAG 2.1 AA standards</li>
+                                      <li>Resolved accessibility violations from audits</li>
+                                      <li>Built scalable CMS layouts and content types</li>
+                                      <li>Improved accessibility, usability, and SEO performance</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- 3) Digital Accessibility Developer -->
+                              <div class="swiper-slide">
+                                <div class="card h-100 border-0 shadow-sm">
+                                  <div class="card-body">
+                                    <h3 class="service__title-7 fs-3">Digital Accessibility Developer</h3>
+                                    <p class="mb-2 work-loc">Elgin Community College <br> November 2020 – September 2022
+                                    </p>
+                                    <p class="card-text">
+                                      Served as accessibility subject matter expert, remediating websites and documents
+                                      while advising leadership on inclusive design.
+                                    </p>
+                                    <ul class="mb-0">
+                                      <li>Improved accessibility scores by 15% in four months</li>
+                                      <li>Performed WCAG 2.0 AA remediation and testing</li>
+                                      <li>Remediated Word, PDF, and PowerPoint documents</li>
+                                      <li>Delivered staff training on accessible content creation</li>
+                                      <li>Tracked work across multiple projects using Jira</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- 4) Front-End Web Developer & Manager -->
+                              <div class="swiper-slide">
+                                <div class="card h-100 border-0 shadow-sm">
+                                  <div class="card-body">
+                                    <h3 class="service__title-7 fs-3">Front-End Web Developer &amp; Manager</h3>
+                                    <p class="mb-2 work-loc">National Institute for Optimal Wellness <br> September 2019
+                                      – October
+                                      2020</p>
+                                    <p class="card-text">
+                                      Led design and development of a full-featured website including eCommerce and
+                                      student
+                                      portal functionality.
+                                    </p>
+                                    <ul class="mb-0">
+                                      <li>Built a fully responsive site with modern UI/UX</li>
+                                      <li>Integrated student portal and eCommerce</li>
+                                      <li>Improved page load time by 20% through optimization</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- 5) Service Advisor -->
+                              <div class="swiper-slide">
+                                <div class="card h-100 border-0 shadow-sm">
+                                  <div class="card-body">
+                                    <h3 class="service__title-7 fs-3">Service Advisor</h3>
+                                    <p class="mb-2 work-loc">Office Depot <br> September 2019 – October 2020</p>
+                                    <p class="card-text">
+                                      Delivered customer-focused solutions while supporting team members and onboarding
+                                      new employees.
+                                    </p>
+                                    <ul class="mb-0">
+                                      <li>Maintained a 9/10 customer satisfaction rating</li>
+                                      <li>Provided tailored service and proactive support</li>
+                                      <li>Trained new staff in design and printing workflows</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- 6) Freelance Application Developer -->
+                              <div class="swiper-slide">
+                                <div class="card h-100 border-0 shadow-sm">
+                                  <div class="card-body">
+                                    <h3 class="service__title-7 fs-3">Freelance Application Developer</h3>
+                                    <p class="mb-2 work-loc">Primitius International <br> January 2018 – November 2018
+                                    </p>
+                                    <p class="card-text">
+                                      Built a custom desktop application to automate survey analysis, dramatically
+                                      reducing
+                                      processing time and manual effort.
+                                    </p>
+                                    <ul class="mb-0">
+                                      <li>Reduced survey analysis time by 67%</li>
+                                      <li>Developed cross-platform app using Electron and JavaScript</li>
+                                      <li>Focused on maintainable, modular code architecture</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- 7) Portal Management Administration Assistant -->
+                              <div class="swiper-slide">
+                                <div class="card h-100 border-0 shadow-sm">
+                                  <div class="card-body">
+                                    <h3 class="service__title-7 fs-3">Portal Management Administration Assistant</h3>
+                                    <p class="mb-2 work-loc">New Eden School of Natural Health and Herbal Studies <br>
+                                      March 2016 –
+                                      April 2017</p>
+                                    <p class="card-text">
+                                      Supported development and optimization of a WordPress-based student portal while
+                                      providing technical assistance to users.
+                                    </p>
+                                    <ul class="mb-0">
+                                      <li>Contributed front-end development to a WordPress student portal</li>
+                                      <li>Gathered requirements early to reduce delivery time by ~15 days</li>
+                                      <li>Improved system performance through bug fixes and tech support</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="experience-nav mt-3">
+                            <button type="button" class="swipper-btn experience-prev" aria-label="Previous cards">
+                              Prev
+                            </button>
+
+                            <button type="button" class="swipper-btn experience-next" aria-label="Next cards">
+                              Next
+                            </button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="btn-wrapper d-flex justify-content-center">
+                      <a href="work.html" class="wc-btn-dark">Featured Work Experience</a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!-- Work Experience End-->
+              <!-- Skills -->
+              <div class="swiper-slide" id="skills">
+                <section class="portfolio-section portfolio__service pt-140 pb-140">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
+                        <h2 class="sec-title">My <br> Technical <span>Skills</span></h2>
+                      </div>
+                      <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
+                        <div class="sec-text">
+                          <p>With 7+ years of experience, I architect and develop enterprise web applications that
+                            integrate front-end systems, backend technologies, accessibility standards, and
+                            user-centered design to deliver scalable, high-performance digital platforms.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="portfolio__service-list">
+                      <div class="row g-3">
+                        <!-- Accessibility -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                          <div class="portfolio__service-item">
+                            <h3 class="ps-title">Accessibility</h3>
+                            <ul>
+                              <li>+ WCAG 2.1 AA, WAI-ARIA</li>
+                              <li>+ IITAA 2.1, Universal Design</li>
+                              <li>+ NVDA, CommonLook, TTS tools</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Languages & Frameworks -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                          <div class="portfolio__service-item">
+                            <h3 class="ps-title">Languages & Frameworks</h3>
+                            <ul>
+                              <li>+ Java, JavaScript, PHP, Blade</li>
+                              <li>+ Node.js / Express</li>
+                              <li>+ HTML5, CSS/SCSS, Bootstrap</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- CMS & Platforms -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                          <div class="portfolio__service-item">
+                            <h3 class="ps-title">CMS & Platforms</h3>
+                            <ul>
+                              <li>+ TerminalFour, WordPress</li>
+                              <li>+ Marketing Cloud</li>
+                              <li>+ Salesforce Exp. Builder</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Design & UX -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                          <div class="portfolio__service-item">
+                            <h3 class="ps-title">Design & UX</h3>
+                            <ul>
+                              <li>+ Figma, Photoshop, InDesign</li>
+                              <li>+ Wireframing & Prototyping</li>
+                              <li>+ User-Centered Design</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- SEO & Analytics -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                          <div class="portfolio__service-item">
+                            <h3 class="ps-title">SEO & Analytics</h3>
+                            <ul>
+                              <li>+ Google Analytics</li>
+                              <li>+ Google Search Console</li>
+                              <li>+ Siteimprove Monitoring</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Tools & Workflow -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                          <div class="portfolio__service-item">
+                            <h3 class="ps-title">Tools & Workflow</h3>
+                            <ul>
+                              <li>+ Git, VS Code, Eclipse</li>
+                              <li>+ Jira, Confluence, Workfront</li>
+                              <li>+ Jotform, Excel, MATLAB</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </section>
+              </div>
+              <!-- Skills End -->
+
+              <!-- Certifications Start-->
+              <div class="swiper-slide" id="certs">
+                <section class="portfolio-section portfolio__project pt-140 pb-140 ">
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xxl-12">
+                        <div class="pp-title-wrap">
+                          <h2 class="sec-title">CERTIFICATIONS</h2>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="items__border"></div>
+                    <div class="portfolio-certs-list pp-slider-wrapper px-0">
+                      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+                        <div class="col">
+                          <a href="assets/imgs/certs/UX-design-foundations.png" class="popup-image">
+                            <img src="assets/imgs/certs/UX-design-foundations.png"
+                              alt="Foundations of UX Design by Google" style="transform: translate(0px, 0px);">
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="assets/imgs/certs/bhumika-bergman-seo-ai.png" class="popup-image">
+                            <img src="assets/imgs/certs/bhumika-bergman-seo-ai.png"
+                              alt="Technical SEO and AI Search Essentials with Semrush"
+                              style="transform: translate(0px, 0px);">
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="assets/imgs/certs/Web-Dev-cert.png" class="popup-image">
+                            <img src="assets/imgs/certs/Web-Dev-cert.png" alt="Web Developer Bootcamp by Udemy"
+                              style="transform: translate(0px, 0px);">
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="assets/imgs/certs/AdobeXD-cert.png" class="popup-image">
+                            <img src="assets/imgs/certs/AdobeXD-cert.png" alt="Adobe XD UI/UX Design"
+                              style="transform: translate(0px, 0px);">
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="assets/imgs/certs/Accessible-Design-cert.png" class="popup-image">
+                            <img src="assets/imgs/certs/Accessible-Design-cert.png"
+                              alt="How to Design for Accessibility" style="transform: translate(0px, 0px);">
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="assets/imgs/certs/Semrush-Siteaudit-cert.png" class="popup-image">
+                            <img src="assets/imgs/certs/Semrush-Siteaudit-cert.png" alt="Semrush Site Audit Course"
+                              style="transform: translate(0px, 0px);">
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="assets/imgs/certs/SEO-cert.png" class="popup-image">
+                            <img src="assets/imgs/certs/SEO-cert.png" alt="Semrush Onpage and Technical SEO course"
+                              style="transform: translate(0px, 0px);">
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="assets/imgs/certs/Technical-SEO-cert.png" class="popup-image">
+                            <img src="assets/imgs/certs/Technical-SEO-cert.png" alt="Technical SEO Course"
+                              style="transform: translate(0px, 0px);">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!-- Certifications End-->
+
+              <!--Projects Start-->
+              <div class="swiper-slide" id="projects">
+                <section class="portfolio-section portfolio__project pt-140 pb-140 ">
+
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xxl-12">
+                        <div class="pp-title-wrap">
+                          <h2 class="sec-title mb-5">PROJECTS</h2>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="items__border"></div>
+                    <div class="pp-slider-wrapper px-0">
+                      <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                        <!-- Transcript Generator -->
+                        <div class="col">
+                          <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                              <h3 class="service__title-7">Transcript <span>Generator</span></h3>
+                              <p class="small text-secondary mb-2">Jan 2021 – Mar 2021</p>
+                              <div class="card-body px-0">
+                                <p class="card-text">Electron desktop tool that auto-builds transcripts from JSON to
+                                  eliminate manual errors.</p>
+                                <hr>
+                                <a href="#" aria-label="Open Transcript Generator page" class="blog__btn mb-3"
+                                  data-bs-toggle="modal" data-bs-target="#modalTranscript">Read
+                                  More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                              </div>
+                              <div class="d-flex flex-wrap gap-1">
+                                <span class="badge text-bg-secondary fw-normal">Electron</span>
+                                <span class="badge text-bg-secondary fw-normal">JavaScript</span>
+                                <span class="badge text-bg-secondary fw-normal">JSON</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- AMD Application -->
+                        <div class="col">
+                          <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                              <h3 class="service__title-7">AMD <span>Application</span></h3>
+                              <p class="small text-secondary mb-2">Sep 2016 – Apr 2017</p>
+                              <div class="card-body px-0">
+                                <p class="card-text">Accessibility-focused Android app for AMD patients with touch +
+                                  voice
+                                  tests; Firebase data.</p>
+                                <hr>
+                                <a href="/assets/pages/amd-app.html" aria-label="Open AMD Application page"
+                                  class="blog__btn mb-3" data-bs-toggle="modal" data-bs-target="#modalAMD">Read More
+                                  <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                              </div>
+                              <div class="d-flex flex-wrap gap-1">
+                                <span class="badge text-bg-secondary fw-normal">Java</span>
+                                <span class="badge text-bg-secondary fw-normal">Android</span>
+                                <span class="badge text-bg-secondary fw-normal">Firebase</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Event Counter Plus -->
+                        <div class="col">
+                          <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                              <h3 class="service__title-7">Event <span>Counter</span></h3>
+                              <p class="small text-secondary mb-2">Aug 2019 – Jul 2020</p>
+                              <div class="card-body px-0">
+                                <p class="card-text">Dynamic event tracker (elapsed time & anniversaries) with RESTful
+                                  routes and responsive UI.</p>
+                                <hr>
+                                <a href="/assets/pages/event-counter.html" aria-label="Open Ecent Counter page"
+                                  class="blog__btn mb-3" data-bs-toggle="modal" data-bs-target="#modalEventCounter">Read
+                                  More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                              </div>
+                              <div class="d-flex flex-wrap gap-1">
+                                <span class="badge text-bg-secondary fw-normal">Node</span>
+                                <span class="badge text-bg-secondary fw-normal">Express</span>
+                                <span class="badge text-bg-secondary fw-normal">EJS</span>
+                                <span class="badge text-bg-secondary fw-normal">MongoDB</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Hospital Messenger System -->
+                        <div class="col">
+                          <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                              <h3 class="service__title-7">Hospital <span>Messenger</span></h3>
+                              <p class="small text-secondary mb-2">Sep 2016 – Dec 2016</p>
+                              <div class="card-body px-0">
+                                <p class="card-text">Secure Java messaging system (HIPAA-inspired) with tested usability
+                                  and scalable design.</p>
+                                <hr>
+                                <a href="/assets/pages/hospital-messenger.html"
+                                  aria-label="Open Hospital Messenger System page" class="blog__btn mb-3"
+                                  data-bs-toggle="modal" data-bs-target="#modalHospitalMessenger">Read More
+                                  <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                              </div>
+                              <div class="d-flex flex-wrap gap-1">
+                                <span class="badge text-bg-secondary fw-normal">Java</span>
+                                <span class="badge text-bg-secondary fw-normal">Eclipse</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Smart Bottle -->
+                        <div class="col">
+                          <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                              <h3 class="service__title-7">Smart <span>Bottle</span></h3>
+                              <p class="small text-secondary mb-2">Sep 2015 – Dec 2015</p>
+                              <div class="card-body px-0">
+                                <p class="card-text">Prototype bottle with simple sensing + feedback for hydration
+                                  tracking and alerts.</p>
+                                <hr>
+                                <a href="/assets/pages/smart-bottle.html" aria-label="Open Smart Bottle page"
+                                  class="blog__btn mb-3" data-bs-toggle="modal" data-bs-target="#modalSmartBottle">Read
+                                  More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                              </div>
+                              <div class="d-flex flex-wrap gap-1">
+                                <span class="badge text-bg-secondary fw-normal">Java</span>
+                                <span class="badge text-bg-secondary fw-normal">Eclipse</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- VEX Robot -->
+                        <div class="col">
+                          <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                              <h3 class="service__title-7">VEX <span>Robot</span></h3>
+                              <p class="small text-secondary mb-2">Sep 2013 – Apr 2014</p>
+                              <div class="card-body px-0">
+                                <p class="card-text">Team-built VEX robot; mechanical design, control logic, and task
+                                  optimization.</p>
+                                <hr>
+                                <a href="/assets/pages/vex-robot.html" aria-label="Open VEX Robot page"
+                                  class="blog__btn mb-3" data-bs-toggle="modal" data-bs-target="#modalVex">Read More
+                                  <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!--Projects End-->
+
+              <!-- Contact area start -->
+              <div class="swiper-slide" id="contact">
+                <section class="portfolio-section portfolio__footer-area  pt-130">
+                  <div class="contact__area pt-100 pb-100">
+                    <div class="container">
+
+                      <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                          <div class="sec-title-wrapper">
+                            <h2 class="pf-title">LET'S CONNECT</h2>
+                          </div>
+                        </div>
+
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                          <div class="contact__text">
+                            <p>
+                              I'm always open to discussing new opportunities, collaborations, or interesting projects.
+                              The best way to reach me is by email or LinkedIn.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mt-5">
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                          <div class="pf-contact">
+                            <h3>CONTACT</h3>
+                            <ul>
+                              <li><a href="mailto:bhumikabergman@gmail.com">bhumikabergman@gmail.com</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                          <div class="contact-cta">
+                            <a class="wc-btn-dark contact-pill"
+                              href="mailto:bhumikabergman@gmail.com?subject=Portfolio%20Inquiry">Email me</a>
+                            <a class="wc-btn-light contact-pill" href="https://www.linkedin.com/in/b-bhumika/"
+                              target="_blank" rel="noopener">LinkedIn</a>
+                            <a class="wc-btn-light contact-pill" href="https://github.com/Bhumika-P/" target="_blank"
+                              rel="noopener">GitHub</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <!-- Contact area end -->
+                </section>
+              </div>
 
             </div>
-            <div class="col-sm-12 col-md-6" id="no-pattern">
-                <div class="row">
-                    <div class="col-sm-12 col-md-10 col-lg-11 col-xl-11">
-                        <h1 class="w3-container bounceIn" id="name" data-aos="fade-right"
-                        data-aos-duration="1500">BHUMIKA BERGMAN</h1>          
-                        <p style="color:white" id="motto" data-aos="fade-left" data-aos-duration="1500">
-                            <br><span class="art">•CODER</span>
-                            <br><span class="art">•DESIGNER</span>
-                            <br><span class="art">•PROFESSIONAL</span>
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-2 col-lg-1 col-xl-1">
-                        <a class="social" target="blank" href="https://github.com/Bhumika-P">
-                            <i class="fa-brands fa-github fa-beat"></i>
-                        </a>
-                        <a class="social" target="blank" href="https://www.linkedin.com/in/p-bhumika/">
-                            <i class="fa-brands fa-linkedin fa-beat"></i>
-                        </a>
-                        <a class="social" target="blank" href="https://github.com/Bhumika-P">
-                            <i class="fa-brands fa-facebook fa-beat"></i>
-                        </a>  
-                    </div>
-                </div>      
-            </div>
-        </div>
+            <div class="swiper-pagination circle-pagination-2"></div>
+          </div>
         </div>
 
-        <div id="contact" class="w3-rest w3-animate-bottom"><br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <p><i class="fa-solid fa-location-dot fa-xl"></i>
-                            <br>Pingree Grove, IL 60140 USA
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <i class="fa-solid fa-phone fa-xl"></i><br>224-595-5222
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <i class="fa-solid fa-envelope fa-xl"></i><br><a href="mailto:bhumikabergman@gmail.com" title="Email Bhumika Bergman">bhumikabergman@gmail.com</a>
-                    </div>
-                </div>
-            </div><!--
-            <div id="social">
-                <a target="_blank" href="https://www.facebook.com/bhumika.patel.737"><img alt="Facebook account" class="logos" src="assets/icons/Fb2.png"
-                        height="50" width="50"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/p-bhumika/"><img alt="LinkedIn account" class="logos" src="assets/icons/Link2.png"
-                        height="50" width="50"></a>
-                <a target="_blank" href="https://github.com/Bhumika-P"><img alt="Github account" src="assets/icons/Git2.png" class="logos" height="50"
-                        width="50"></a>
-            </div><br>-->
-            <!--<div class="container">
-                <a href="assets/doc/Bhumika-Bergman-WebDev.pdf" class="btn btn-secondary btn-lg">DOWNLOAD RESUME</a>
-            </div> -->
-            
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <!-- Transcript Generator -->
+  <div class="modal fade" id="modalTranscript" tabindex="-1" aria-labelledby="modalTranscriptLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-2">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTranscriptLabel">Transcript Generator</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="preloader">
-            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" 
-            preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2">
-                <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/>
-                <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/>
-                </circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" 
-                keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" 
-                keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg>
+        <div class="modal-body">
+          <p class="mb-1"><strong>Timeline:</strong> January 2021 – March 2021</p>
+          <p class="mb-3"><strong>Tech:</strong> Electron, JavaScript, HTML, CSS, JSON</p>
+
+          <p>
+            Helped an online school replace a manual, Word-based transcript process that was
+            slow and error-prone. Gathered requirements directly from the client and content
+            manager to design an internal desktop tool staff could use.
+          </p>
+          <p>
+            Built a cross-platform Electron app with a user-friendly UI. The application pulls
+            curriculum and course data from JSON, lets staff enter student information, and
+            automatically calculates credit hours and GPA. This significantly reduced human
+            errors and the time required to generate transcripts.
+          </p>
         </div>
-        
-        </script>
-        <script>includeHTML();</script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script src="assets/js/portfolio.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Counter Plus -->
+  <div class="modal fade" id="modalEventCounter" tabindex="-1" aria-labelledby="modalEventCounterLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-2">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEventCounterLabel">Event Counter Plus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-1"><strong>Timeline:</strong> August 2019 – July 2020</p>
+          <p class="mb-3"><strong>Tech:</strong> JavaScript, HTML, CSS, Node.js, Express, EJS, MongoDB</p>
+
+          <p>
+            This project began as an idea to track special events by showing both the time elapsed since an event and
+            the time remaining until its next monthly or yearly anniversary. I built the application using the Express
+            framework, structuring it with RESTful routes and using Bootstrap 4 for a responsive interface.
+          </p>
+          <p>
+            Users can create and track events, and the app dynamically calculates elapsed time and upcoming milestones.
+            Event data is stored in MongoDB, which allows for efficient retrieval and scalability. The project
+            strengthened my experience with Node.js, Express routing, templating, and building clean, user-centered
+            functionality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AMD Application -->
+  <div class="modal fade" id="modalAMD" tabindex="-1" aria-labelledby="modalAmdLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-2">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAmdLabel">AMD Application</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-1"><strong>Timeline:</strong> September 2016 – April 2017</p>
+          <p class="mb-3"><strong>Tech:</strong> Object-Oriented Programming, Java, Android, Firebase</p>
+
+          <p>
+            Designed an Android application for patients with Age-related Macular Degeneration
+            (AMD), focusing on accessibility and early detection of visual distortions.
+          </p>
+          <p>
+            Built in Android Studio with Firebase as the backend to store patient profiles,
+            test patterns, and results. The app presents randomized line-based tests and lets
+            patients respond via touch or voice. Results are stored for later review, combining
+            usability with medical relevance and earning recognition as an award-winning
+            capstone project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hospital Messenger System -->
+  <div class="modal fade" id="modalHospitalMessenger" tabindex="-1" aria-labelledby="modalHospitalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-2">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHospitalLabel">Hospital Messenger System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-1"><strong>Timeline:</strong> September 2016 – December 2016</p>
+          <p class="mb-3"><strong>Tech:</strong> Object-Oriented Programming, Java</p>
+
+          <p>
+            This project involved designing and implementing a secure messaging system for hospital staff. I began by
+            gathering user requirements from the TA and professor (acting as clients) and writing acceptance tests and
+            unit tests to define expected system behavior.
+          </p>
+          <p>Users such as doctors, nurses, and administrators register with an ID and name. The system supports
+            group-based messaging with strict privacy rules: users can only send messages to groups they belong to, and
+            can only read messages from their registered groups. Messages have states (new/old), and users can delete
+            their old messages.</p>
+          <p>The system includes commands for managing users, groups, registrations, and messages (e.g., add_user,
+            add_group, register_user, send_message, read_message, delete_message). It also supports queries such as
+            list_users and list_groups, sorted as required. New and old messages are maintained in sorted lists for each
+            user.</p>
+          <p>
+            I implemented the system in Java using Maps, Sets, Lists, and Iterators to model the abstract state and
+            enforce data integrity. This project strengthened my understanding of requirements elicitation, use cases,
+            acceptance testing, and building secure, scalable software systems.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smart Bottle -->
+  <div class="modal fade" id="modalSmartBottle" tabindex="-1" aria-labelledby="modalBottleLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-2">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalBottleLabel">Smart Bottle</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-1"><strong>Timeline:</strong> September 2015 – December 2015</p>
+          <p class="mb-3"><strong>Tech:</strong> Embedded systems, sensors (conceptual / prototype), Java</p>
+
+          <p>
+            Worked on a prototype “smart bottle” concept to help users monitor hydration
+            habits. The project focused on integrating simple sensing hardware with logic
+            to track intake and provide basic feedback.
+          </p>
+          <p>
+            Explored how low-cost embedded components and clear feedback patterns can
+            encourage healthier daily behaviors without adding friction to the user’s
+            routine.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VEX Robot -->
+  <div class="modal fade" id="modalVex" tabindex="-1" aria-labelledby="modalVexLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-2">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalVexLabel">VEX Robot</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-1"><strong>Timeline:</strong> September 2013 – April 2014</p>
+          <p class="mb-3"><strong>Tech:</strong> VEX Robotics platform, C/C++</p>
+
+          <p>
+            Contributed to a team-built VEX competition robot, supporting mechanical design,
+            control logic, and tuning robot behavior to complete assigned tasks.
+          </p>
+          <p>
+            Collaborated closely with teammates to iterate on prototypes, debug both
+            hardware and software, and deliver reliable performance under competition
+            constraints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/chroma.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/vanilla-tilt.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/anchor.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Ensure Swiper is loaded before this script runs.
+    // If your template loads Swiper at the bottom, keep this script below it.
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const root = document.querySelector('.experience-swiper');
+      if (!root) return;
+
+      const sliderEl = root.querySelector('.experience-cards-slider');
+      const prevEl = root.querySelector('.experience-prev');
+      const nextEl = root.querySelector('.experience-next');
+
+      if (!sliderEl || typeof Swiper === 'undefined') return;
+
+      new Swiper(sliderEl, {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        speed: 450,
+        watchOverflow: true,
+
+        navigation: {
+          prevEl,
+          nextEl
+        },
+
+        breakpoints: {
+          576: { slidesPerView: 1.2, spaceBetween: 16 },
+          768: { slidesPerView: 2, spaceBetween: 18 },
+          992: { slidesPerView: 3, spaceBetween: 20 } // shows 3 cards on desktop
+        }
+      });
+    });
+
+  </script>
+
 </body>
 
 </html>
