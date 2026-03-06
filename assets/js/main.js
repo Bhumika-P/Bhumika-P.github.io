@@ -2200,10 +2200,10 @@
   // 59. Portfolio Main Slider
   var breakpoint = window.matchMedia('( max-width: 1300px )');
   var pp_main_wrap = document.querySelector('.portfolio__main-slider');
-
+  var pp_main;
   if (pp_main_wrap) {
     var enableSwiper = function () {
-      var pp_main = new Swiper(".portfolio__main-slider", {
+      pp_main = new Swiper(".portfolio__main-slider", {
         allowTouchMove: false,
         slidesPerView: 1,
         spaceBetween: 0,
@@ -2218,7 +2218,7 @@
 
     var breakpointChecker = function () {
       if (breakpoint.matches === true) {
-        if (pp_main !== undefined) pp_main.destroy(true, true);
+        if (typeof pp_main !== "undefined" && pp_main) pp_main.destroy(true, true);
         return;
       } else if (breakpoint.matches === false) {
         return enableSwiper();

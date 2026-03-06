@@ -18,6 +18,12 @@ a:not(.wc-btn-dark) {
     background-color:  #121212;
     color:  #D8C8E9!important;
 }
+/* Add breathing room under sticky header */
+.swiper-slide > section,
+.swiper-slide > .container,
+.swiper-slide .portfolio-section {
+  padding-top: 150px;
+}
 /*Navigation*/
 .header__logo-5 img, .offcanvas__logo img{
     height: 100px;
