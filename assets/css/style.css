@@ -64,8 +64,11 @@ h3 {
 .header__logo-5 img, .offcanvas__logo img{
     height: 80px;
 }
+.sticky-2 .header__logo-5 .logo-light img {
+    filter: none;
+}
 .offcanvas__area a{
-    color: #D8C8E9!important;
+    color: #D8C8E9 !important;
 }
 /*Hero*/
 section.portfolio__hero-area{
